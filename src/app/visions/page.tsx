@@ -3,55 +3,52 @@
 import React from "react";
 import Layout from "../components/Layout";
 
-interface Feature {
- title: string;
- description: string;
- icon: string;
-}
-
 export default function Visions() {
- const features: Feature[] = [
-  {
-   title: "Our Mission",
-   description:
-    "At Innovatr, our mission is to revolutionize the way businesses approach innovation. We believe that every company has the potential to drive meaningful change.",
-   icon: "🚀",
-  },
-  {
-   title: "Our Approach",
-   description:
-    "We take a holistic approach to innovation, recognizing that true transformation requires more than just new ideas. Our methodology encompasses fostering creativity and offering expert guidance.",
-   icon: "🔍",
-  },
-  {
-   title: "Our Impact",
-   description:
-    "By partnering with Innovatr, companies can accelerate their innovation processes, develop groundbreaking products and services, and stay ahead of market trends.",
-   icon: "💡",
-  },
- ];
-
  return (
   <Layout>
    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-    <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-     <h1 className="text-6xl font-bold mb-8">Our Vision and Mission</h1>
-     <p className="text-2xl mb-12">
-      Empowering Innovation, Transforming Tomorrow
-     </p>
-     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
-      {features.map((feature, index) => (
-       <div key={index} className="border p-6 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-2">{feature.title}</h2>
-        <p className="mb-4">{feature.description}</p>
-        <div className="text-4xl">{feature.icon}</div>
-       </div>
-      ))}
+    <main className="flex flex-col items-center justify-center w-full flex-1 px-4 sm:px-6 lg:px-8 text-center">
+     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8">Our Vision: A Future Where Ownership is for Everyone</h1>
+     <div className="max-w-4xl mx-auto space-y-8">
+      <p className="text-lg sm:text-xl">
+       At Innovatr, we believe that ownership shouldn't be exclusive. Our vision is a world where anyone, regardless of location or financial standing, can invest in and own a share of the assets that inspire them. We are building a platform where creators and investors come together to unlock the full potential of tokenized assets and intellectual property (IP).
+      </p>
+
+      <section>
+       <h2 className="text-2xl sm:text-3xl font-semibold mb-4">Breaking Down Barriers</h2>
+       <p className="text-lg">
+        For too long, the ability to invest in high-value assets like music royalties, art, real estate, and intellectual property has been reserved for a select few. Innovatr aims to break these barriers by leveraging blockchain technology to democratize ownership. We believe that everyone should have the chance to participate in the growth and success of the things they believe in—whether that's the next big album, a groundbreaking piece of art, or a promising real estate project.
+       </p>
+      </section>
+
+      <section>
+       <h2 className="text-2xl sm:text-3xl font-semibold mb-4">Empowering Creators and Communities</h2>
+       <p className="text-lg">
+        Our vision is also about empowerment. Innovatr is not just for investors—it's for creators. We see a future where artists, musicians, innovators, and property owners can retain control of their work while raising funds directly from their supporters. Through Innovatr, creators can tokenize their assets, offer fractional ownership to their communities, and engage in a new way with their fans and followers.
+       </p>
+      </section>
+
+      <section>
+       <h2 className="text-2xl sm:text-3xl font-semibold mb-4">A Decentralized Future</h2>
+       <p className="text-lg">
+        At Innovatr, we envision a world where ownership is transparent, secure, and decentralized. Our platform, built on blockchain technology, ensures that all transactions are recorded immutably, giving users confidence and trust in their investments. With our multichain support, Innovatr offers flexibility, security, and access to multiple blockchain ecosystems, making sure that every asset finds its right place.
+       </p>
+      </section>
+
+      <section>
+       <h2 className="text-2xl sm:text-3xl font-semibold mb-4">Innovatr Token</h2>
+       <p className="text-lg">
+        Central to our vision is the Innovatr token, which allows users to engage more deeply with the platform. Whether it's reducing fees, earning rewards, or participating in governance, Innovatr Token plays a vital role in empowering our community to shape the future of Innovatr. We see a future where users not only invest in tokenized assets but also have a voice in the direction of the platform itself.
+       </p>
+      </section>
+
+      <section>
+       <h2 className="text-2xl sm:text-3xl font-semibold mb-4">A New Standard of Ownership</h2>
+       <p className="text-lg">
+        Our ultimate goal is to set a new standard for how ownership works in the digital age. Innovatr will be the platform that bridges the gap between creators and investors, fostering a global community that values transparency, innovation, and equal opportunity. By making ownership decentralized, inclusive, and accessible, we're creating a future where everyone has a stake in the success of the things they love.
+       </p>
+      </section>
      </div>
-     <p className="mt-12 text-xl">
-      Together, we can build a future where innovation knows no bounds, and
-      every challenge is an opportunity for growth and positive change.
-     </p>
     </main>
    </div>
   </Layout>
