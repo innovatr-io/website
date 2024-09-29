@@ -49,4 +49,8 @@ body::before {
   .text-balance {
     text-wrap: balance;
   }
+  
+  .border-gradient-to-r {
+    border-image: linear-gradient(to right, var(--cosmos-primary), var(--cosmos-secondary), var(--cosmos-accent)) 1;
+  }
 }
