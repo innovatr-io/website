@@ -1,44 +1,38 @@
-import Link from 'next/link';
-import Layout from '../components/Layout';
-import dynamic from 'next/dynamic';
-
-const FeatureSection = dynamic(() => import('./FeatureSection'), { ssr: false });
+import React from 'react';
+import FeatureSection from './FeatureSection';
 
 export default function Visions() {
   const features = [
     {
       title: "Our Mission",
-      description: "At Innovatr, our mission is to revolutionize the way businesses approach innovation. We believe that every company, regardless of size or industry, has the potential to drive meaningful change and create groundbreaking solutions.",
+      description: "At Innovatr, our mission is to revolutionize the way businesses approach innovation. We believe that every company has the potential to drive meaningful change.",
       icon: "🚀",
-      className: "border-b lg:border-r dark:border-neutral-800",
     },
     {
       title: "Our Approach",
-      description: "We take a holistic approach to innovation, recognizing that true transformation requires more than just new ideas. Our comprehensive methodology encompasses fostering creativity, providing cutting-edge tools, and offering expert guidance.",
+      description: "We take a holistic approach to innovation, recognizing that true transformation requires more than just new ideas. Our methodology encompasses fostering creativity and offering expert guidance.",
       icon: "🔍",
-      className: "border-b lg:border-r dark:border-neutral-800",
     },
     {
       title: "Our Impact",
-      description: "By partnering with Innovatr, companies can expect to accelerate their innovation processes, develop groundbreaking products and services, improve operational efficiency, and stay ahead of market trends.",
+      description: "By partnering with Innovatr, companies can accelerate their innovation processes, develop groundbreaking products and services, and stay ahead of market trends.",
       icon: "💡",
-      className: "border-b lg:border-none dark:border-neutral-800",
     },
   ];
 
   return (
-    <Layout>
-      <FeatureSection features={features} />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center">
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+    <div className="min-h-screen bg-gray-100">
+      <main className="container mx-auto px-4 py-8">
+        <FeatureSection features={features} />
+        <div className="text-center mt-12">
+          <p className="text-lg text-gray-600 mb-8">
             Together, we can build a future where innovation knows no bounds, and every challenge is an opportunity for growth and positive change.
           </p>
-          <Link href="/" className="btn btn-primary">
+          <a href="/" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
             Back to Home
-          </Link>
+          </a>
         </div>
-      </div>
-    </Layout>
+      </main>
+    </div>
   );
 }
