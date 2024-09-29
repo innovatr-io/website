@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import FramedTextBox from "../components/FramedTextBox";
 
 // Import SVG components
-import { TokenIcon, ChainIcon, CreatorIcon, InvestmentIcon, KeyIcon, FeeIcon, SecurityIcon, AccessIcon } from "../components/Icons";
+import { TokenIcon, ChainIcon, CreatorIcon, InvestmentIcon, KeyIcon, FeeIcon, SecurityIcon, AccessIcon } from "@/app/components/Icons";
 
 const SolutionCard: React.FC<{
  title: string;
