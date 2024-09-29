@@ -5,7 +5,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const IconWrapper: React.FC<IconProps> = ({ children, className, ...props }) => (
-  <div className={`w-12 h-12 rounded-full bg-cosmos-accent/20 flex items-center justify-center ${className}`}>
+  <div className={`w-12 h-12 flex items-center justify-center ${className}`}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
