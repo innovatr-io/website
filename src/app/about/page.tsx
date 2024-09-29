@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import { TextGenerateEffect } from "../components/TextGenerateEffect";
 import { Timeline } from "../components/Timeline";
 import dynamic from "next/dynamic";
-import { LightningIcon, ArtIcon, MusicIcon, RealEstateIcon } from "../components/Icons";
+import { LightningIcon, ArtIcon, MusicIcon, RealEstateIcon, ChainIcon, CreatorIcon, InvestmentIcon, KeyIcon, FeeIcon, SecurityIcon, AccessIcon, RocketIcon, LightbulbIcon, ShieldIcon } from "../components/Icons";
 import FeatureCard from "../components/FeatureCard";
 import { motion } from "framer-motion";
 
