@@ -39,33 +39,41 @@ export const Timeline = () => {
         year="2024"
         title="Platform Launch"
         description="Release the initial version of our fractional ownership platform, enabling users to invest in a variety of alternative assets."
-        icon={<svg className="w-3 h-3 text-white dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-        </svg>}
+        icon={
+          <svg className="w-6 h-6 text-cosmos-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          </svg>
+        }
       />
       <TimelineItem
         year="2024"
         title="Expand Asset Offerings"
         description="Introduce new alternative investment opportunities, such as real estate, private equity, and venture capital funds, to our platform."
-        icon={<svg className="w-3 h-3 text-white dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 1v16M1 9h16"/>
-        </svg>}
+        icon={
+          <svg className="w-6 h-6 text-cosmos-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+          </svg>
+        }
       />
       <TimelineItem
         year="2025"
         title="Mobile App Development"
         description="Develop and launch a mobile app to provide users with a seamless investment experience on the go."
-        icon={<svg className="w-3 h-3 text-white dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"/>
-        </svg>}
+        icon={
+          <svg className="w-6 h-6 text-cosmos-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          </svg>
+        }
       />
       <TimelineItem
         year="2025"
         title="Decentralized Exchange Integration"
         description="Integrate our platform with a decentralized exchange to enable peer-to-peer trading of fractional ownership assets."
-        icon={<svg className="w-3 h-3 text-white dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 1v5h-5M2 19v-5h5m10-4a8 8 0 0 1-14.947 3.97M1 10a8 8 0 0 1 14.947-3.97"/>
-        </svg>}
+        icon={
+          <svg className="w-6 h-6 text-cosmos-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+          </svg>
+        }
       />
     </ol>
   );
