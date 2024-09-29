@@ -4,9 +4,9 @@ import Link from "next/link";
 import Layout from "./components/Layout";
 import { GradientBanner } from "./components/GradientBanner";
 import { TextGenerateEffect } from "./components/TextGenerateEffect";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const PieChart = dynamic(() => import('./components/PieChart'), { ssr: false });
+const PieChart = dynamic(() => import("./components/PieChart"), { ssr: false });
 
 export default function Home() {
  return (
