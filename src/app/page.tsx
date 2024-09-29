@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Layout from './components/Layout';
 import { GradientBanner } from './components/GradientBanner';
-import AnimatedText from './components/AnimatedText';
 
 export default function Home() {
   return (
@@ -9,8 +8,7 @@ export default function Home() {
       <section className="w-full h-[600px]">
         <GradientBanner className="h-full">
           <h1 className="text-5xl font-bold mb-8 text-white drop-shadow-lg">
-            <AnimatedText text="Revolutionizing" className="mr-4" />
-            Ownership
+            Revolutionizing Ownership
           </h1>
           <p className="text-2xl mb-8 text-white drop-shadow-md">A unique community driven fractional ownership platform</p>
           <div className="flex space-x-4">
