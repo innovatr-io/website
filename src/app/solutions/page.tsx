@@ -98,6 +98,28 @@ export default function Solutions() {
           />
         </div>
 
+        <h2 className="text-3xl font-bold mb-8 text-center mt-16">Our Advantages</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4 text-white">Lower Fees</h3>
+            <p className="text-gray-300">
+              By using blockchain technology, we cut out unnecessary middlemen, which means lower fees for both creators and investors.
+            </p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4 text-white">Decentralized & Transparent</h3>
+            <p className="text-gray-300">
+              All transactions are secured on the blockchain, ensuring transparency and trust between creators and their supporters.
+            </p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4 text-white">Inclusive Access</h3>
+            <p className="text-gray-300">
+              Innovatr makes it possible for everyone to participate in the future of ownership, from fans who want to support their favorite creators to investors looking for promising opportunities.
+            </p>
+          </div>
+        </div>
+
         <div className="text-center">
           <Link href="/" className="btn btn-primary">Back to Home</Link>
         </div>
