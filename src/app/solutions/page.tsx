@@ -2,6 +2,28 @@ import Link from 'next/link';
 import Layout from '../components/Layout';
 import { GradientBanner } from '../components/GradientBanner';
 
+interface SolutionCardProps {
+  title: string;
+  subtitle: string;
+  description: string;
+  features: string[];
+}
+
+const SolutionCard: React.FC<SolutionCardProps> = ({ title, subtitle, description, features }) => {
+  return (
+    <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+      <h2 className="text-2xl font-semibold mb-2 text-white">{title}</h2>
+      <h3 className="text-lg font-medium mb-4 text-gray-400">{subtitle}</h3>
+      <p className="mb-4 text-gray-300">{description}</p>
+      <ul className="list-disc list-inside text-gray-300">
+        {features.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
 export default function Solutions() {
   return (
     <Layout>
@@ -19,53 +41,51 @@ export default function Solutions() {
         </p>
         <h3 className="text-2xl font-semibold mb-6 text-center">Here's how we do it:</h3>
         
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Fractional Ownership Platform</h2>
-          <p className="mb-4">
-            Our cutting-edge platform enables fractional ownership of various assets, including real estate, art, and intellectual property. By leveraging blockchain technology, we provide a secure and transparent way for investors to diversify their portfolios and access previously inaccessible investment opportunities.
-          </p>
-          <ul className="list-disc list-inside mb-4">
-            <li>Tokenization of high-value assets</li>
-            <li>Seamless trading of fractional ownership</li>
-            <li>Transparent and immutable ownership records</li>
-          </ul>
-        </section>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <SolutionCard
+            title="Fractional Ownership Platform"
+            subtitle="Diversify Your Portfolio"
+            description="Our cutting-edge platform enables fractional ownership of various assets, including real estate, art, and intellectual property. By leveraging blockchain technology, we provide a secure and transparent way for investors to diversify their portfolios and access previously inaccessible investment opportunities."
+            features={[
+              "Tokenization of high-value assets",
+              "Seamless trading of fractional ownership",
+              "Transparent and immutable ownership records"
+            ]}
+          />
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Smart Contract Management</h2>
-          <p className="mb-4">
-            We offer advanced smart contract solutions to automate and secure various aspects of asset management and ownership transfer. Our smart contracts ensure that all transactions and agreements are executed precisely as intended, reducing the need for intermediaries and minimizing the risk of disputes.
-          </p>
-          <ul className="list-disc list-inside mb-4">
-            <li>Automated dividend distribution</li>
-            <li>Secure voting mechanisms for asset-related decisions</li>
-            <li>Programmable compliance with regulatory requirements</li>
-          </ul>
-        </section>
+          <SolutionCard
+            title="Smart Contract Management"
+            subtitle="Automate and Secure"
+            description="We offer advanced smart contract solutions to automate and secure various aspects of asset management and ownership transfer. Our smart contracts ensure that all transactions and agreements are executed precisely as intended, reducing the need for intermediaries and minimizing the risk of disputes."
+            features={[
+              "Automated dividend distribution",
+              "Secure voting mechanisms for asset-related decisions",
+              "Programmable compliance with regulatory requirements"
+            ]}
+          />
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Decentralized Marketplace</h2>
-          <p className="mb-4">
-            Our decentralized marketplace provides a user-friendly interface for buying, selling, and trading fractional ownership tokens. This solution enables global accessibility, 24/7 trading, and increased liquidity for traditionally illiquid assets.
-          </p>
-          <ul className="list-disc list-inside mb-4">
-            <li>Peer-to-peer trading without intermediaries</li>
-            <li>Real-time price discovery and market data</li>
-            <li>Integration with various wallet solutions</li>
-          </ul>
-        </section>
+          <SolutionCard
+            title="Decentralized Marketplace"
+            subtitle="Trade 24/7 Globally"
+            description="Our decentralized marketplace provides a user-friendly interface for buying, selling, and trading fractional ownership tokens. This solution enables global accessibility, 24/7 trading, and increased liquidity for traditionally illiquid assets."
+            features={[
+              "Peer-to-peer trading without intermediaries",
+              "Real-time price discovery and market data",
+              "Integration with various wallet solutions"
+            ]}
+          />
 
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Asset Tokenization Services</h2>
-          <p className="mb-4">
-            We provide comprehensive asset tokenization services, helping businesses and individuals convert their valuable assets into tradable digital tokens. Our team of experts guides clients through the entire process, from legal compliance to technical implementation.
-          </p>
-          <ul className="list-disc list-inside mb-4">
-            <li>Custom token creation and issuance</li>
-            <li>Legal and regulatory compliance support</li>
-            <li>Integration with existing business systems</li>
-          </ul>
-        </section>
+          <SolutionCard
+            title="Asset Tokenization Services"
+            subtitle="Unlock Your Asset's Potential"
+            description="We provide comprehensive asset tokenization services, helping businesses and individuals convert their valuable assets into tradable digital tokens. Our team of experts guides clients through the entire process, from legal compliance to technical implementation."
+            features={[
+              "Custom token creation and issuance",
+              "Legal and regulatory compliance support",
+              "Integration with existing business systems"
+            ]}
+          />
+        </div>
 
         <div className="text-center">
           <Link href="/" className="btn btn-primary">Back to Home</Link>
