@@ -4,6 +4,7 @@ import Link from "next/link";
 import Layout from "./components/Layout";
 import { GradientBanner } from "./components/GradientBanner";
 import { TextGenerateEffect } from "./components/TextGenerateEffect";
+import { Timeline } from "./components/Timeline";
 import dynamic from "next/dynamic";
 
 const PieChart = dynamic(() => import("./components/PieChart"), { ssr: false });
@@ -130,6 +131,11 @@ export default function Home() {
       </ul>
      </div>
     </div>
+   </section>
+
+   <section className="w-full max-w-6xl mx-auto py-16 px-4">
+    <h2 className="text-3xl font-bold mb-8 text-center">Our Roadmap</h2>
+    <Timeline />
    </section>
   </Layout>
  );
