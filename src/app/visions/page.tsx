@@ -13,9 +13,9 @@ const VisionSection = ({ title, content }: { title: string; content: string }) =
 );
 
 const FramedVisionStatement = ({ children }: { children: React.ReactNode }) => (
-  <div className="relative p-8 mb-12 overflow-hidden">
+  <div className="relative p-8 mb-12 overflow-hidden h-48">
     <div className="absolute inset-0 bg-gradient-to-r from-cosmos-primary via-cosmos-secondary to-cosmos-accent opacity-20"></div>
-    <div className="relative z-10">
+    <div className="relative z-10 h-full overflow-y-auto">
       {children}
     </div>
     <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-cosmos-accent"></div>
