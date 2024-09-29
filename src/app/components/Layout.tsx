@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col min-h-screen">
-      <nav className="navbar bg-base-100 fixed top-0 z-10 shadow-md">
+      <nav className="navbar bg-transparent backdrop-blur-md fixed top-0 z-10">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost normal-case text-xl">innovatr</Link>
         </div>
