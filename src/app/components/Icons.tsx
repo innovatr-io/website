@@ -18,7 +18,29 @@ const IconWrapper: React.FC<IconProps> = ({ children, className, ...props }) => 
   </div>
 );
 
-export const TokenIcon: React.FC<IconProps> = (props) => (
+export const LightningIcon: React.FC<IconProps> = (props) => (
+  <IconWrapper {...props}>
+    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+  </IconWrapper>
+);
+
+export const ArtIcon: React.FC<IconProps> = (props) => (
+  <IconWrapper {...props}>
+    <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+  </IconWrapper>
+);
+
+export const MusicIcon: React.FC<IconProps> = (props) => (
+  <IconWrapper {...props}>
+    <path d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+  </IconWrapper>
+);
+
+export const RealEstateIcon: React.FC<IconProps> = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+  </IconWrapper>
+);
   <IconWrapper {...props}>
     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z" />
   </IconWrapper>
