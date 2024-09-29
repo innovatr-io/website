@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Footer from './Footer';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,6 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <main className="flex-grow flex flex-col items-center justify-start mt-16">
         {children}
       </main>
+      <Footer />
     </div>
   );
 }
