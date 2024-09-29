@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import Footer from './Footer';
-export default function Layout({ children }: { children: React.ReactNode }) {
+import { cn } from "@/utils/cn";
+
+export default function Layout({ children, className }: { children: React.ReactNode, className?: string }) {
   return (
-    <div className="flex flex-col min-h-screen bg-cosmos-background text-cosmos-text-light">
+    <div className={cn("flex flex-col min-h-screen bg-cosmos-background text-cosmos-text-light", className)}>
       <nav className="navbar bg-cosmos-primary text-cosmos-text-light fixed top-0 left-0 right-0 z-50 border-b-4 border-gradient-to-r from-cosmos-primary via-cosmos-secondary to-cosmos-accent">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost normal-case text-xl">Innovatr</Link>
