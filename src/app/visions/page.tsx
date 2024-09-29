@@ -2,23 +2,44 @@
 
 import React from "react";
 import Layout from "../components/Layout";
+import { motion } from "framer-motion";
 
 const VisionSection = ({ title, content }: { title: string; content: string }) => (
   <section className="mb-8">
-    <h2 className="text-2xl sm:text-3xl font-semibold mb-4">{title}</h2>
-    <p className="text-lg">{content}</p>
+    <h2 className="text-xl sm:text-2xl font-semibold mb-3">{title}</h2>
+    <p className="text-base">{content}</p>
   </section>
+);
+
+const FramedVisionStatement = ({ children }: { children: React.ReactNode }) => (
+  <div className="relative p-8 mb-12 overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-r from-cosmos-primary via-cosmos-secondary to-cosmos-accent opacity-20"></div>
+    <div className="relative z-10">
+      {children}
+    </div>
+    <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-cosmos-accent"></div>
+    <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-cosmos-accent"></div>
+  </div>
 );
 
 export default function Visions() {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark">
+      <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8 bg-cosmos-background text-cosmos-text-light">
         <main className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 text-primary-dark dark:text-primary-light">Our Vision: A Future Where Ownership is for Everyone</h1>
-          <p className="text-xl mb-12 text-text-dark dark:text-text-light">
-            At Innovatr, we believe that ownership shouldn't be exclusive. We're building a platform where creators and investors unite to unlock the full potential of tokenized assets and intellectual property.
-          </p>
+          <motion.h1 
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-cosmos-accent"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            Our Vision: A Future Where Ownership is for Everyone
+          </motion.h1>
+          <FramedVisionStatement>
+            <p className="text-lg mb-6">
+              At Innovatr, we believe that ownership shouldn't be exclusive. We're building a platform where creators and investors unite to unlock the full potential of tokenized assets and intellectual property.
+            </p>
+          </FramedVisionStatement>
           <VisionSection
             title="Breaking Down Barriers"
             content="Innovatr aims to democratize ownership of high-value assets like music royalties, art, real estate, and intellectual property using blockchain technology. We believe everyone should have the chance to participate in the growth and success of the things they believe in."
