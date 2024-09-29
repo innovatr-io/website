@@ -14,9 +14,9 @@ export const GradientBanner = ({
     <div className={cn("w-full relative flex flex-col items-center justify-center overflow-hidden", className)}>
       <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
       <div className="absolute inset-0 w-full h-full">
-        <div className="absolute top-0 left-0 right-0 bottom-16 bg-gradient-to-r from-blue-500 to-teal-500 opacity-0"></div>
-        <div className="absolute top-0 left-8 right-8 bottom-8 bg-gradient-to-r from-rose-500 to-purple-500 opacity-0"></div>
-        <div className="absolute top-8 left-0 right-0 bottom-0 bg-gradient-to-r from-teal-500 to-blue-500 opacity-0"></div>
+        <div className="absolute top-0 left-0 right-0 bottom-16 bg-gradient-to-r from-cosmos-primary to-cosmos-secondary opacity-0"></div>
+        <div className="absolute top-0 left-8 right-8 bottom-8 bg-gradient-to-r from-cosmos-secondary to-cosmos-accent opacity-0"></div>
+        <div className="absolute top-8 left-0 right-0 bottom-0 bg-gradient-to-r from-cosmos-accent to-cosmos-primary opacity-0"></div>
         <motion.div
           animate={{
             opacity: [0, .5, 0],
@@ -26,7 +26,7 @@ export const GradientBanner = ({
             duration: 5,
             ease: "easeInOut",
           }}
-          className="absolute inset-0 bg-gradient-to-r from-primary-light to-primary-dark"
+          className="absolute inset-0 bg-gradient-to-r from-cosmos-primary to-cosmos-secondary"
         />
         <motion.div
           animate={{
@@ -38,7 +38,7 @@ export const GradientBanner = ({
             ease: "easeInOut",
             delay: 2,
           }}
-          className="absolute inset-0 bg-gradient-to-r from-secondary-light to-secondary-dark"
+          className="absolute inset-0 bg-gradient-to-r from-cosmos-secondary to-cosmos-accent"
         />
         <motion.div
           animate={{
@@ -50,7 +50,7 @@ export const GradientBanner = ({
             ease: "easeInOut",
             delay: 4,
           }}
-          className="absolute inset-0 bg-gradient-to-r from-primary to-secondary"
+          className="absolute inset-0 bg-gradient-to-r from-cosmos-accent to-cosmos-primary"
         />
       </div>
       <div className="relative z-20 flex flex-col items-center justify-center text-center">
