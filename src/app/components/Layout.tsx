@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </ul>
         </div>
       </nav>
-      <main className="flex-grow flex flex-col items-center justify-start p-24 mt-16">
+      <main className="flex-grow flex flex-col items-center justify-start mt-16">
         {children}
       </main>
     </div>
