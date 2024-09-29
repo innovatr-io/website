@@ -91,6 +91,21 @@ export default function Home() {
 
    <section className="w-full max-w-6xl mx-auto py-16 px-4">
     <h2 className="text-3xl font-bold mb-8 text-center">Token Distribution</h2>
+    <div className="mb-8 text-center">
+      <p className="mb-4">
+        The VATR token allocation is designed to support long-term
+        growth and community involvement.
+      </p>
+      <p className="mb-4">
+        Team allocation ensures responsible project management, while
+        the strategic reserve enables strategic partnerships and
+        ecosystem development.
+      </p>
+      <p>
+        A substantial portion is dedicated to staking and reward pools,
+        fostering community participation and incentivizing engagement.
+      </p>
+    </div>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
      <div className="bg-gray-800 p-6 rounded-lg shadow-md text-center">
       <h3 className="text-xl font-semibold mb-2 text-white">40%</h3>
