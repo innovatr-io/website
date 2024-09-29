@@ -94,10 +94,22 @@ export default function Solutions() {
    </GradientBanner>
 
    <div className="max-w-6xl mx-auto px-4 py-8">
-    <motion.h2 className="text-3xl font-bold mb-4 text-center" {...fadeInUp}>
+    <motion.h2 
+      className="text-3xl font-bold mb-4 text-center" 
+      variants={fadeInUp}
+      initial="initial"
+      animate="animate"
+      transition={{ duration: 0.6 }}
+    >
      What do we bring to the Market?
     </motion.h2>
-    <motion.p className="text-lg mb-8 text-center" {...fadeInUp}>
+    <motion.p 
+      className="text-lg mb-8 text-center" 
+      variants={fadeInUp}
+      initial="initial"
+      animate="animate"
+      transition={{ duration: 0.6 }}
+    >
      Innovatr solves current challenges by leveraging the power of blockchain
      technology to democratize ownership and investment. Our platform allows
      anyone, anywhere, to own a fractional share of tokenized assets, breaking
@@ -105,7 +117,10 @@ export default function Solutions() {
     </motion.p>
     <motion.h3
      className="text-2xl font-semibold mb-6 text-center"
-     {...fadeInUp}
+     variants={fadeInUp}
+     initial="initial"
+     animate="animate"
+     transition={{ duration: 0.6 }}
     >
      Here&apos;s how we do it:
     </motion.h3>
