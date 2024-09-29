@@ -75,7 +75,7 @@ export default function Solutions() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          In today's world, ownership of high-value assets and intellectual property is largely inaccessible to the broader market. Whether it's music royalties, fine art, real estate, or creative intellectual property, the gatekeepers have traditionally been large corporations and a small group of well-capitalized investors. Innovatr is here to change that.
+          In today&apos;s world, ownership of high-value assets and intellectual property is largely inaccessible to the broader market. Whether it&apos;s music royalties, fine art, real estate, or creative intellectual property, the gatekeepers have traditionally been large corporations and a small group of well-capitalized investors. Innovatr is here to change that.
         </motion.p>
       </GradientBanner>
       
@@ -213,7 +213,7 @@ export default function Solutions() {
         >
           <h2 className="text-3xl font-bold mb-6 text-center">A New Era of Ownership</h2>
           <p className="text-lg text-gray-300 mb-8">
-            Innovatr offers a revolutionary solution to the traditional barriers that have limited access to ownership and investment. By combining the power of blockchain, multichain flexibility, and tokenized assets, we're creating a future where ownership is democratized, transparent, and accessible to everyone. Whether you're a creator looking to maintain control over your work or an investor eager to own a piece of the future, Innovatr is here to make it happen.
+            Innovatr offers a revolutionary solution to the traditional barriers that have limited access to ownership and investment. By combining the power of blockchain, multichain flexibility, and tokenized assets, we&apos;re creating a future where ownership is democratized, transparent, and accessible to everyone. Whether you&apos;re a creator looking to maintain control over your work or an investor eager to own a piece of the future, Innovatr is here to make it happen.
           </p>
         </motion.div>
 
