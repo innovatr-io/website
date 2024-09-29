@@ -7,6 +7,7 @@ import { TextGenerateEffect } from "./components/TextGenerateEffect";
 import { Timeline } from "./components/Timeline";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
+import { FeatureIcon } from "./components/FeatureIcon";
 
 const PieChart = dynamic(() => import("./components/PieChart"), { ssr: false });
 
@@ -38,31 +39,39 @@ export default function Home() {
    </section>
 
    <section className="w-full max-w-6xl mx-auto py-16 px-4">
-    <h2 className="text-3xl font-bold mb-8 text-center">Key Features</h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-     <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+    <h2 className="text-3xl font-bold mb-12 text-center">Key Features</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+     <motion.div 
+      className="bg-gray-800 p-6 rounded-lg shadow-md relative group overflow-hidden"
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+     >
+      <FeatureIcon name="ownership" />
       <h3 className="text-xl font-semibold mb-2 text-white">
        Own a Piece of the Future
       </h3>
       <h4 className="text-lg font-medium mb-4 text-gray-400">
-       {" "}
        Tokenize. Invest. Empower.
       </h4>
       <p className="text-gray-300">
-       {" "}
        Innovatr is revolutionizing ownership and investment by leveraging
        blockchain technology to make high-value assets and intellectual property
        (IP) accessible to everyone. From music to art and beyond, Innovatr
        enables fractional ownership in a decentralized, transparent, and secure
        way.
       </p>
-     </div>
-     <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+     </motion.div>
+     <motion.div 
+      className="bg-gray-800 p-6 rounded-lg shadow-md relative group overflow-hidden"
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+     >
+      <FeatureIcon name="art" />
       <h3 className="text-xl font-semibold mb-2 text-white">
-       Fine Art & Digital Art{" "}
+       Fine Art & Digital Art
       </h3>
       <h4 className="text-lg font-medium mb-4 text-gray-400">
-       Democratizing art investment{" "}
+       Democratizing art investment
       </h4>
       <p className="text-gray-300">
        Through Innovatr, artists can tokenize both physical and digital
@@ -71,8 +80,13 @@ export default function Home() {
        and fans to invest in art without the need for large upfront capital,
        while artists gain a new revenue stream.
       </p>
-     </div>
-     <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+     </motion.div>
+     <motion.div 
+      className="bg-gray-800 p-6 rounded-lg shadow-md relative group overflow-hidden"
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+     >
+      <FeatureIcon name="music" />
       <h3 className="text-xl font-semibold mb-2 text-white">Music Industry</h3>
       <h4 className="text-lg font-medium mb-4 text-gray-400">
        Empower artists and fans
@@ -84,8 +98,13 @@ export default function Home() {
        share in the financial success of their favorite artists, while creators
        retain greater control over their work.
       </p>
-     </div>
-     <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+     </motion.div>
+     <motion.div 
+      className="bg-gray-800 p-6 rounded-lg shadow-md relative group overflow-hidden"
+      whileHover={{ scale: 1.05 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+     >
+      <FeatureIcon name="realestate" />
       <h3 className="text-xl font-semibold mb-2 text-white">Real Estate</h3>
       <h4 className="text-lg font-medium mb-4 text-gray-400">
        Democratizing property investment
@@ -97,7 +116,7 @@ export default function Home() {
        investment more accessible, while property owners can raise capital
        without selling entire properties.
       </p>
-     </div>
+     </motion.div>
     </div>
    </section>
 
