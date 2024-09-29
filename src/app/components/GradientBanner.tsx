@@ -14,7 +14,7 @@ export const GradientBanner = ({
       <div className="absolute inset-0 w-full h-full">
         <motion.div
           animate={{
-            opacity: [0, 0.5, 0],
+            opacity: [0, 0.3, 0],
           }}
           transition={{
             repeat: Infinity,

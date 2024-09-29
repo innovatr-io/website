@@ -73,7 +73,7 @@ export default function Solutions() {
 
  return (
   <Layout>
-   <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8 bg-cosmos-background text-cosmos-text-light">
+   <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8  text-cosmos-text-light">
     <main className="max-w-4xl mx-auto text-center">
      <motion.h1
       className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white"
@@ -206,7 +206,7 @@ export default function Solutions() {
         <AdvantageCard
          title="Lower Fees"
          description="By using blockchain technology, we cut out unnecessary middlemen, which means lower fees for both creators and investors."
-         icon={<FeeIcon className="w-full h-full" />}
+         icon={<FeeIcon className="w-full h-full " />}
         />
        </motion.div>
        <motion.div variants={fadeInUp}>
