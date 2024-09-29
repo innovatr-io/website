@@ -26,27 +26,25 @@ export default function Visions() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold mb-8">
-          Our Vision and Mission
-        </h1>
-        <p className="text-2xl mb-12">
-          Empowering Innovation, Transforming Tomorrow
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
-          {features.map((feature, index) => (
-            <div key={index} className="border p-6 rounded-lg">
-              <h2 className="text-2xl font-semibold mb-2">{feature.title}</h2>
-              <p className="mb-4">{feature.description}</p>
-              <div className="text-4xl">{feature.icon}</div>
-            </div>
-          ))}
-        </div>
-        <p className="mt-12 text-xl">
-          Together, we can build a future where innovation knows no bounds, and every challenge is an opportunity for growth and positive change.
-        </p>
-      </main>
-    </div>
+    <>
+      <h1 className="text-6xl font-bold mb-8">
+        Our Vision and Mission
+      </h1>
+      <p className="text-2xl mb-12">
+        Empowering Innovation, Transforming Tomorrow
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
+        {features.map((feature, index) => (
+          <div key={index} className="border p-6 rounded-lg">
+            <h2 className="text-2xl font-semibold mb-2">{feature.title}</h2>
+            <p className="mb-4">{feature.description}</p>
+            <div className="text-4xl">{feature.icon}</div>
+          </div>
+        ))}
+      </div>
+      <p className="mt-12 text-xl">
+        Together, we can build a future where innovation knows no bounds, and every challenge is an opportunity for growth and positive change.
+      </p>
+    </>
   );
 }
