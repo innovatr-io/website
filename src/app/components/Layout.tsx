@@ -5,7 +5,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="flex flex-col min-h-screen">
       <nav className="navbar bg-transparent backdrop-blur-md fixed top-0 z-10">
         <div className="flex-1">
-          <Link href="/" className="btn btn-ghost normal-case text-xl">innovatr</Link>
+          <Link href="/" className="btn btn-ghost normal-case text-xl">Innovatr</Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
