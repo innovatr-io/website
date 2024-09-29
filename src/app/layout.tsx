@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { Kode_Mono } from 'next/font/google';
 import "./globals.css";
 
-const kodeMono = Kode_Mono({ subsets: ['latin'] });
+const kodeMono = Kode_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-kode-mono',
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
