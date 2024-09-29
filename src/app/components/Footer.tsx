@@ -2,29 +2,29 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-cosmos-primary text-cosmos-text-light py-8">
+    <footer className="bg-cosmos-primary/90 backdrop-blur-md text-cosmos-text-light py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Innovatr</h3>
-            <p className="text-sm text-cosmos-text-gray">Revolutionizing ownership through blockchain technology.</p>
+            <p className="text-sm text-cosmos-text-light/80">Revolutionizing ownership through blockchain technology.</p>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
             <ul className="text-sm">
-              <li><Link href="/solutions" className="text-cosmos-text-gray hover:text-cosmos-accent">Solutions</Link></li>
-              <li><Link href="/visions" className="text-cosmos-text-gray hover:text-cosmos-accent">Visions</Link></li>
+              <li><Link href="/solutions" className="text-cosmos-text-light/80 hover:text-cosmos-accent">Solutions</Link></li>
+              <li><Link href="/visions" className="text-cosmos-text-light/80 hover:text-cosmos-accent">Visions</Link></li>
             </ul>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
             <h3 className="text-lg font-semibold mb-2">Contact</h3>
-            <p className="text-sm text-cosmos-text-gray">Email: info@innovatr.com</p>
-            <p className="text-sm text-cosmos-text-gray">Phone: +1 (123) 456-7890</p>
+            <p className="text-sm text-cosmos-text-light/80">Email: info@innovatr.com</p>
+            <p className="text-sm text-cosmos-text-light/80">Phone: +1 (123) 456-7890</p>
           </div>
           <div className="w-full md:w-1/4">
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-cosmos-text-gray hover:text-cosmos-accent">
+              <a href="#" className="text-cosmos-text-light/80 hover:text-cosmos-accent">
                 <span className="sr-only">Facebook</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-cosmos-secondary pt-8 text-sm text-center text-cosmos-text-gray">
+        <div className="mt-8 border-t border-cosmos-secondary/50 pt-8 text-sm text-center text-cosmos-text-light/70">
           <p>&copy; 2024 Innovatr. All rights reserved.</p>
         </div>
       </div>
