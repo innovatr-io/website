@@ -25,11 +25,28 @@ const config: Config = {
  },
 };
 
+// Ensure plugins is an array
+if (!config.plugins) {
+  config.plugins = [];
+}
+
 const {
  default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 
 config.plugins.push(function ({ addBase, theme }: any) {
+ let allColors = flattenColorPalette(theme("colors"));
+ let newVars = Object.fromEntries(
+  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+ );
+
+ addBase({
+  ":root": newVars,
+ });
+});
+
+// Type assertion to ensure TypeScript knows plugins is defined
+(config.plugins as any[]).push(function ({ addBase, theme }: any) {
  let allColors = flattenColorPalette(theme("colors"));
  let newVars = Object.fromEntries(
   Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
