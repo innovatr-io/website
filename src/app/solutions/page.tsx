@@ -43,46 +43,57 @@ export default function Solutions() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <SolutionCard
-            title="Fractional Ownership Platform"
-            subtitle="Diversify Your Portfolio"
-            description="Our cutting-edge platform enables fractional ownership of various assets, including real estate, art, and intellectual property. By leveraging blockchain technology, we provide a secure and transparent way for investors to diversify their portfolios and access previously inaccessible investment opportunities."
+            title="Tokenized Ownership"
+            subtitle="Own a Piece of the Future"
+            description="We tokenize high-value assets and intellectual property (IP), allowing them to be divided into smaller, more affordable shares. This means you can own a fraction of an artist's album, a piece of fine art, or shares in intellectual property that would otherwise be inaccessible."
             features={[
-              "Tokenization of high-value assets",
-              "Seamless trading of fractional ownership",
-              "Transparent and immutable ownership records"
+              "Fractional ownership of high-value assets",
+              "Access to previously inaccessible investments",
+              "Transparent and secure ownership records"
             ]}
           />
 
           <SolutionCard
-            title="Smart Contract Management"
-            subtitle="Automate and Secure"
-            description="We offer advanced smart contract solutions to automate and secure various aspects of asset management and ownership transfer. Our smart contracts ensure that all transactions and agreements are executed precisely as intended, reducing the need for intermediaries and minimizing the risk of disputes."
+            title="Multichain Flexibility"
+            subtitle="Choose Your Blockchain"
+            description="Innovatr offers the flexibility to tokenize assets across multiple blockchains, including Solana, Ethereum, and Binance Smart Chain. This multichain approach ensures liquidity, security, and the ability to tap into the growing decentralized finance (DeFi) ecosystem, allowing creators and investors to choose the blockchain that best suits their needs."
             features={[
-              "Automated dividend distribution",
-              "Secure voting mechanisms for asset-related decisions",
-              "Programmable compliance with regulatory requirements"
+              "Support for multiple blockchains",
+              "Enhanced liquidity and security",
+              "Integration with DeFi ecosystems"
             ]}
           />
 
           <SolutionCard
-            title="Decentralized Marketplace"
-            subtitle="Trade 24/7 Globally"
-            description="Our decentralized marketplace provides a user-friendly interface for buying, selling, and trading fractional ownership tokens. This solution enables global accessibility, 24/7 trading, and increased liquidity for traditionally illiquid assets."
+            title="Empowering Creators"
+            subtitle="Take Control of Your Work"
+            description="For the first time, creators can tokenize their work and maintain control over it. Whether it's a music album, a digital piece of art, or a film, Innovatr allows creators to engage directly with their fans and supporters, who can invest in their projects and share in their success."
             features={[
-              "Peer-to-peer trading without intermediaries",
-              "Real-time price discovery and market data",
-              "Integration with various wallet solutions"
+              "Direct engagement with fans and supporters",
+              "Tokenization of creative works",
+              "New revenue streams for creators"
             ]}
           />
 
           <SolutionCard
-            title="Asset Tokenization Services"
-            subtitle="Unlock Your Asset's Potential"
-            description="We provide comprehensive asset tokenization services, helping businesses and individuals convert their valuable assets into tradable digital tokens. Our team of experts guides clients through the entire process, from legal compliance to technical implementation."
+            title="Fractional Investment"
+            subtitle="Invest in What You Believe In"
+            description="By allowing fractional ownership, Innovatr opens the door for individuals to invest small amounts in assets they believe in. This lowers the financial barrier to entry and allows more people to diversify their investments across multiple assets."
             features={[
-              "Custom token creation and issuance",
-              "Legal and regulatory compliance support",
-              "Integration with existing business systems"
+              "Low barrier to entry for investments",
+              "Diversification opportunities",
+              "Access to high-value asset investments"
+            ]}
+          />
+
+          <SolutionCard
+            title="Innovatr Token"
+            subtitle="Powering Our Ecosystem"
+            description="At the heart of our platform is the Innovatr token, issued on the Solana blockchain. Users can utilize $INTR for reduced transaction fees, staking rewards, and exclusive platform benefits. It's a key part of our ecosystem, driving engagement and providing value to both creators and investors."
+            features={[
+              "Reduced transaction fees",
+              "Staking rewards",
+              "Exclusive platform benefits"
             ]}
           />
         </div>
