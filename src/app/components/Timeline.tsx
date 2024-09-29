@@ -7,17 +7,17 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
   return (
     <motion.li
       className="mb-10 ml-6"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
     >
       <motion.div
         className="flex items-center mb-4"
-        initial={{ opacity: 0, x: -20 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
       >
         <span className="absolute flex items-center justify-center w-6 h-6 bg-cosmos-primary rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary -left-3">
           {icon}
