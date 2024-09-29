@@ -2,6 +2,7 @@ import Link from "next/link";
 import Layout from "./components/Layout";
 import { GradientBanner } from "./components/GradientBanner";
 import { TextGenerateEffect } from "./components/TextGenerateEffect";
+import { PieChart } from "./components/PieChart";
 
 export default function Home() {
  return (
@@ -91,38 +92,31 @@ export default function Home() {
 
    <section className="w-full max-w-6xl mx-auto py-16 px-4">
     <h2 className="text-3xl font-bold mb-8 text-center">Token Distribution</h2>
-    <div className="mb-8 text-center">
-      <p className="mb-4">
-        The VATR token allocation is designed to support long-term
-        growth and community involvement.
-      </p>
-      <p className="mb-4">
-        Team allocation ensures responsible project management, while
-        the strategic reserve enables strategic partnerships and
-        ecosystem development.
-      </p>
-      <p>
-        A substantial portion is dedicated to staking and reward pools,
-        fostering community participation and incentivizing engagement.
-      </p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-     <div className="bg-gray-800 p-6 rounded-lg shadow-md text-center">
-      <h3 className="text-xl font-semibold mb-2 text-white">40%</h3>
-      <p className="text-gray-300">Public Sale</p>
-     </div>
-     <div className="bg-gray-800 p-6 rounded-lg shadow-md text-center">
-      <h3 className="text-xl font-semibold mb-2 text-white">25%</h3>
-      <p className="text-gray-300">Team & Advisors</p>
-     </div>
-     <div className="bg-gray-800 p-6 rounded-lg shadow-md text-center">
-      <h3 className="text-xl font-semibold mb-2 text-white">20%</h3>
-      <p className="text-gray-300">Platform Development</p>
-     </div>
-     <div className="bg-gray-800 p-6 rounded-lg shadow-md text-center">
-      <h3 className="text-xl font-semibold mb-2 text-white">15%</h3>
-      <p className="text-gray-300">Community Rewards</p>
-     </div>
+    <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+      <div className="w-full md:w-1/2">
+        <PieChart />
+      </div>
+      <div className="w-full md:w-1/2">
+        <p className="mb-4">
+          The VATR token allocation is designed to support long-term
+          growth and community involvement.
+        </p>
+        <p className="mb-4">
+          Team allocation ensures responsible project management, while
+          the strategic reserve enables strategic partnerships and
+          ecosystem development.
+        </p>
+        <p>
+          A substantial portion is dedicated to staking and reward pools,
+          fostering community participation and incentivizing engagement.
+        </p>
+        <ul className="mt-4 list-disc list-inside">
+          <li><span className="font-semibold">40%</span> - Public Sale</li>
+          <li><span className="font-semibold">25%</span> - Team & Advisors</li>
+          <li><span className="font-semibold">20%</span> - Platform Development</li>
+          <li><span className="font-semibold">15%</span> - Community Rewards</li>
+        </ul>
+      </div>
     </div>
    </section>
   </Layout>
