@@ -4,7 +4,7 @@ import "./globals.css";
 
 const kodeMono = Kode_Mono({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: '400',
   display: 'swap',
   variable: '--font-kode-mono',
 });
