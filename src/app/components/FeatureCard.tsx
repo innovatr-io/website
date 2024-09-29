@@ -5,7 +5,7 @@ interface FeatureCardProps {
   title: string;
   subtitle: string;
   description: string;
-  icon: string;
+  icon: React.ReactNode;
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ title, subtitle, description, icon }) => {
@@ -16,7 +16,9 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, subtitle, description,
       whileTap={{ scale: 0.95 }}
     >
       <div className="flex items-center mb-4">
-        <span className="text-3xl mr-4 text-cosmos-accent">{icon}</span>
+        <div className="w-12 h-12 mr-4 flex items-center justify-center bg-cosmos-accent rounded-full">
+          {icon}
+        </div>
         <div>
           <h2 className="text-2xl font-semibold text-white">{title}</h2>
           <h3 className="text-lg font-medium text-cosmos-text-gray">{subtitle}</h3>
