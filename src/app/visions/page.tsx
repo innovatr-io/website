@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import { FeatureSection } from './FeatureSection';
+import dynamic from 'next/dynamic';
+
+const FeatureSection = dynamic(() => import('./FeatureSection'), { ssr: false });
 
 export default function Visions() {
   const features = [

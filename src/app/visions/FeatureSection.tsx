@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 interface Feature {
@@ -7,7 +7,7 @@ interface Feature {
   icon: string;
 }
 
-export const FeatureSection: React.FC<{ features: Feature[] }> = ({
+const FeatureSection: React.FC<{ features: Feature[] }> = ({
   features,
 }) => {
   return (
@@ -29,3 +29,5 @@ export const FeatureSection: React.FC<{ features: Feature[] }> = ({
     </div>
   );
 };
+
+export default FeatureSection;
