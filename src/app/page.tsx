@@ -8,7 +8,7 @@ export default function Home() {
       <section className="w-full h-[600px]">
         <GradientBanner className="h-full">
           <h1 className="text-5xl font-bold mb-8 text-white drop-shadow-lg">Revolutionizing Ownership</h1>
-          <p className="text-2xl mb-8 text-white drop-shadow-md">Innovating for a better future</p>
+          <p className="text-2xl mb-8 text-white drop-shadow-md">A unique community driven fractional ownership platform</p>
           <div className="flex space-x-4">
             <Link href="/solutions" className="btn btn-primary btn-lg">Our Solutions</Link>
             <Link href="/visions" className="btn btn-secondary btn-lg">Our Visions</Link>
