@@ -12,6 +12,21 @@ const config: Config = {
    colors: {
     background: "var(--background)",
     foreground: "var(--foreground)",
+    primary: {
+      light: '#4FD1C5',
+      DEFAULT: '#38B2AC',
+      dark: '#319795',
+    },
+    secondary: {
+      light: '#9F7AEA',
+      DEFAULT: '#805AD5',
+      dark: '#6B46C1',
+    },
+    text: {
+      light: '#4A5568',
+      DEFAULT: '#2D3748',
+      dark: '#E2E8F0',
+    },
    },
    fontFamily: {
     mono: ["var(--font-kode-mono)", "monospace"],
