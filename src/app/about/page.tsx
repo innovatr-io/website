@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Layout from "../components/Layout";
 import { GradientBanner } from "../components/GradientBanner";
 import { TextGenerateEffect } from "../components/TextGenerateEffect";
@@ -8,20 +7,22 @@ import { Timeline } from "../components/Timeline";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 
-const PieChart = dynamic(() => import("../components/PieChart"), { ssr: false });
+const PieChart = dynamic(() => import("../components/PieChart"), {
+ ssr: false,
+});
 
 export default function About() {
  return (
   <Layout>
    <section className="w-full h-[600px]">
     <GradientBanner className="h-full">
-     <motion.h1 
+     <motion.h1
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="text-5xl font-bold mb-8 text-white drop-shadow-lg"
      >
-      About Innovatr
+      Revolutionizing Ownership
      </motion.h1>
      <p className="text-2xl mb-8 text-white drop-shadow-md">
       <TextGenerateEffect words="A unique community driven fractional ownership platform" />
@@ -32,7 +33,7 @@ export default function About() {
    <section className="w-full max-w-6xl mx-auto py-16 px-4">
     <h2 className="text-3xl font-bold mb-12 text-center">Key Features</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-     <motion.div 
+     <motion.div
       className="bg-primary p-6 rounded-lg shadow-md"
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -51,7 +52,7 @@ export default function About() {
        way.
       </p>
      </motion.div>
-     <motion.div 
+     <motion.div
       className="bg-gray-800 p-6 rounded-lg shadow-md"
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -70,7 +71,7 @@ export default function About() {
        while artists gain a new revenue stream.
       </p>
      </motion.div>
-     <motion.div 
+     <motion.div
       className="bg-gray-800 p-6 rounded-lg shadow-md"
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -87,7 +88,7 @@ export default function About() {
        retain greater control over their work.
       </p>
      </motion.div>
-     <motion.div 
+     <motion.div
       className="bg-gray-800 p-6 rounded-lg shadow-md"
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -153,8 +154,11 @@ export default function About() {
    <section className="w-full max-w-6xl mx-auto py-16 px-4">
     <h2 className="text-3xl font-bold mb-8 text-center">Our Partners</h2>
     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-     {['Partner1', 'Partner2', 'Partner3', 'Partner4'].map((partner, index) => (
-      <div key={index} className="flex items-center justify-center p-4 bg-gray-800 rounded-lg shadow-md">
+     {["Partner1", "Partner2", "Partner3", "Partner4"].map((partner, index) => (
+      <div
+       key={index}
+       className="flex items-center justify-center p-4 bg-gray-800 rounded-lg shadow-md"
+      >
        <span className="text-xl font-semibold text-white">{partner}</span>
       </div>
      ))}
