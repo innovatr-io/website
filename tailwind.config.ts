@@ -21,19 +21,19 @@ const config: Config = {
  },
 };
 
-const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
+const {
+ default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
-config.plugins.push(
-  function ({ addBase, theme }: any) {
-    let allColors = flattenColorPalette(theme("colors"));
-    let newVars = Object.fromEntries(
-      Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-    );
- 
-    addBase({
-      ":root": newVars,
-    });
-  }
-);
+config.plugins.push(function ({ addBase, theme }: any) {
+ let allColors = flattenColorPalette(theme("colors"));
+ let newVars = Object.fromEntries(
+  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+ );
+
+ addBase({
+  ":root": newVars,
+ });
+});
 
 export default config;
