@@ -13,7 +13,11 @@ export default function Solutions() {
       </GradientBanner>
       
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <h2 className="text-3xl font-bold mb-8 text-center">Our Solutions</h2>
+        <h2 className="text-3xl font-bold mb-4 text-center">What do we bring to the Market?</h2>
+        <p className="text-lg mb-8 text-center">
+          Innovatr solves current challenges by leveraging the power of blockchain technology to democratize ownership and investment. Our platform allows anyone, anywhere, to own a fractional share of tokenized assets, breaking down traditional barriers and making ownership accessible to all.
+        </p>
+        <h3 className="text-2xl font-semibold mb-6 text-center">Here's how we do it:</h3>
         
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Fractional Ownership Platform</h2>
