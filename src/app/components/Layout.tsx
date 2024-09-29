@@ -4,7 +4,7 @@ import Footer from './Footer';
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col min-h-screen bg-cosmos-background text-cosmos-text-light">
-      <nav className="navbar bg-cosmos-primary text-cosmos-text-light backdrop-blur-md fixed top-0 z-10">
+      <nav className="navbar bg-cosmos-primary/90 text-cosmos-text-light backdrop-blur-md fixed top-0 left-0 right-0 z-50">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost normal-case text-xl">Innovatr</Link>
         </div>
@@ -16,7 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </ul>
         </div>
       </nav>
-      <main className="flex-grow flex flex-col items-center justify-start mt-16">
+      <main className="flex-grow flex flex-col items-center justify-start pt-16">
         {children}
       </main>
       <Footer />
