@@ -14,19 +14,19 @@ const SolutionCard: React.FC<{
 }> = ({ title, subtitle, description, features, icon }) => {
  return (
   <motion.div
-   className="bg-primary p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-   whileHover={{ scale: 1.05 }}
+   className="bg-cosmos-primary/30 backdrop-blur-md p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-cosmos-accent/20"
+   whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(94, 226, 231, 0.3)" }}
    whileTap={{ scale: 0.95 }}
   >
    <div className="flex items-center mb-4">
-    <span className="text-3xl mr-4 text-secondary-light">{icon}</span>
+    <span className="text-3xl mr-4 text-cosmos-accent">{icon}</span>
     <div>
      <h2 className="text-2xl font-semibold text-white">{title}</h2>
-     <h3 className="text-lg font-medium text-background-light">{subtitle}</h3>
+     <h3 className="text-lg font-medium text-cosmos-text-gray">{subtitle}</h3>
     </div>
    </div>
-   <p className="mb-4 text-background-light">{description}</p>
-   <ul className="list-disc list-inside text-background-light">
+   <p className="mb-4 text-cosmos-text-light">{description}</p>
+   <ul className="list-disc list-inside text-cosmos-text-light">
     {features.map((feature, index) => (
      <li key={index}>{feature}</li>
     ))}
@@ -42,13 +42,13 @@ const AdvantageCard: React.FC<{
 }> = ({ title, description, icon }) => {
  return (
   <motion.div
-   className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-   whileHover={{ scale: 1.05 }}
+   className="bg-cosmos-secondary/30 backdrop-blur-md p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-cosmos-accent/20"
+   whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(94, 226, 231, 0.3)" }}
    whileTap={{ scale: 0.95 }}
   >
-   <span className="text-4xl mb-4 block">{icon}</span>
+   <span className="text-4xl mb-4 block text-cosmos-accent">{icon}</span>
    <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
-   <p className="text-gray-300">{description}</p>
+   <p className="text-cosmos-text-light">{description}</p>
   </motion.div>
  );
 };
