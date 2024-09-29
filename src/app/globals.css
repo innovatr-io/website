@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: theme('colors.background');
+  --background: theme('colors.background.DEFAULT');
   --foreground: theme('colors.text.DEFAULT');
 }
 
