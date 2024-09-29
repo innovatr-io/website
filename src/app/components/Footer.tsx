@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-cosmos-primary/90 backdrop-blur-md text-cosmos-text-light py-8 border-t-4 border-gradient-to-r from-cosmos-primary via-cosmos-secondary to-cosmos-accent">
+    <footer className="bg-cosmos-primary/90 backdrop-blur-md text-cosmos-text-light py-4 border-t-4 border-gradient-to-r from-cosmos-primary via-cosmos-secondary to-cosmos-accent">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
