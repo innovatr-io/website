@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const TimelineItem = ({ year, title, description, icon }: { year: string; title: string; description: string; icon: React.ReactNode }) => {
   return (
     <motion.li
-      className="mb-10 ml-12 relative"
+      className="mb-10 ml-6 relative"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
@@ -19,10 +19,10 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
       >
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-cosmos-primary rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary -left-3">
+        <span className="absolute flex items-center justify-center w-6 h-6 bg-cosmos-primary rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary -left-9">
           {icon}
         </span>
-        <span className="absolute -left-24 bg-primary-light text-primary-dark text-sm font-medium px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light">
+        <span className="absolute -left-32 bg-primary-light text-primary-dark text-sm font-medium px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light">
           {year}
         </span>
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
@@ -44,7 +44,7 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
 
 export const Timeline = () => {
   return (
-    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-24">
+    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-8">
       <TimelineItem
         year="2024"
         title="Platform Launch"
