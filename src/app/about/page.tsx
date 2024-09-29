@@ -4,7 +4,12 @@ import Layout from "../components/Layout";
 import { TextGenerateEffect } from "../components/TextGenerateEffect";
 import { Timeline } from "../components/Timeline";
 import dynamic from "next/dynamic";
-import { LightningIcon, ArtIcon, MusicIcon, RealEstateIcon, ChainIcon, CreatorIcon, InvestmentIcon, KeyIcon, FeeIcon, SecurityIcon, AccessIcon, RocketIcon, LightbulbIcon, ShieldIcon } from "../components/Icons";
+import {
+ LightningIcon,
+ ArtIcon,
+ MusicIcon,
+ RealEstateIcon,
+} from "../components/Icons";
 import FeatureCard from "../components/FeatureCard";
 import { motion } from "framer-motion";
 
@@ -15,7 +20,7 @@ const PieChart = dynamic(() => import("../components/PieChart"), {
 export default function About() {
  return (
   <Layout>
-      <section className="w-full h-[600px] flex flex-col items-center justify-center">
+   <section className="w-full h-[600px] flex flex-col items-center justify-center">
     <motion.h1
      initial={{ opacity: 0, y: -50 }}
      animate={{ opacity: 1, y: 0 }}
@@ -36,33 +41,25 @@ export default function About() {
       title="Own a Piece of the Future"
       subtitle="Tokenize. Invest. Empower."
       description="Innovatr is revolutionizing ownership and investment by leveraging blockchain technology to make high-value assets and intellectual property (IP) accessible to everyone. From music to art and beyond, Innovatr enables fractional ownership in a decentralized, transparent, and secure way."
-      icon={
-       <LightningIcon className="w-6 h-6 text-cosmos-primary" />
-      }
+      icon={<LightningIcon className="w-6 h-6 text-cosmos-primary" />}
      />
      <FeatureCard
       title="Fine Art & Digital Art"
       subtitle="Democratizing art investment"
       description="Through Innovatr, artists can tokenize both physical and digital artworks, offering investors the ability to own fractional shares of high-value pieces. This democratizes the art market, allowing collectors and fans to invest in art without the need for large upfront capital, while artists gain a new revenue stream."
-      icon={
-       <ArtIcon className="w-6 h-6 text-cosmos-primary" />
-      }
+      icon={<ArtIcon className="w-6 h-6 text-cosmos-primary" />}
      />
      <FeatureCard
       title="Music Industry"
       subtitle="Empower artists and fans"
       description="Innovatr empowers musicians and artists to tokenize their albums, songs, and royalties, giving fans the opportunity to invest in their favorite creators. By owning fractional shares of music assets, supporters can share in the financial success of their favorite artists, while creators retain greater control over their work."
-      icon={
-       <MusicIcon className="w-6 h-6 text-cosmos-primary" />
-      }
+      icon={<MusicIcon className="w-6 h-6 text-cosmos-primary" />}
      />
      <FeatureCard
       title="Real Estate"
       subtitle="Democratizing property investment"
       description="Innovatr allows property owners to tokenize real estate assets, enabling fractional ownership of commercial and residential properties. Investors can buy and trade shares in real estate projects, making property investment more accessible, while property owners can raise capital without selling entire properties."
-      icon={
-       <RealEstateIcon className="w-6 h-6 text-cosmos-primary" />
-      }
+      icon={<RealEstateIcon className="w-6 h-6 text-cosmos-primary" />}
      />
     </div>
    </section>

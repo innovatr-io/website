@@ -6,7 +6,16 @@ import { motion } from "framer-motion";
 import FramedTextBox from "../components/FramedTextBox";
 
 // Import SVG components
-import { TokenIcon, ChainIcon, CreatorIcon, InvestmentIcon, KeyIcon, FeeIcon, SecurityIcon, AccessIcon } from "@/app/components/Icons";
+import {
+ ChainIcon,
+ CreatorIcon,
+ InvestmentIcon,
+ KeyIcon,
+ FeeIcon,
+ SecurityIcon,
+ AccessIcon,
+ RocketIcon,
+} from "@/app/components/Icons";
 
 const SolutionCard: React.FC<{
  title: string;
@@ -116,7 +125,7 @@ export default function Solutions() {
           "Access to previously inaccessible investments",
           "Transparent and secure ownership records",
          ]}
-         icon={<TokenIcon className="w-full h-full" />}
+         icon={<RocketIcon className="w-full h-full" />}
         />
        </motion.div>
        <motion.div variants={fadeInUp}>
