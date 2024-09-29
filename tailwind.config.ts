@@ -14,7 +14,8 @@ const config: Config = {
     foreground: "var(--foreground)",
    },
    fontFamily: {
-    sans: ["var(--font-kode-mono)", "monospace"],
+    mono: ["var(--font-kode-mono)", "monospace"],
+    sans: ["var(--font-kode-mono)", "monospace"], // Fallback to sans if you want Kode Mono as default
    },
   },
  },
