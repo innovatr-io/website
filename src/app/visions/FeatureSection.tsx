@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+
+// Simple utility function to conditionally join classNames
+const cn = (...classes: (string | undefined)[]) => classes.filter(Boolean).join(' ');
 
 interface Feature {
   title: string;
