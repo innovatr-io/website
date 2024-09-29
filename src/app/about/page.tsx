@@ -5,6 +5,7 @@ import { TextGenerateEffect } from "../components/TextGenerateEffect";
 import { Timeline } from "../components/Timeline";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
+import FeatureCard from "../components/FeatureCard";
 
 const PieChart = dynamic(() => import("../components/PieChart"), {
  ssr: false,
@@ -30,78 +31,30 @@ export default function About() {
    <section className="w-full max-w-6xl mx-auto py-16 px-4">
     <h2 className="text-3xl font-bold mb-12 text-center">Key Features</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-     <motion.div
-      className="bg-primary p-6 rounded-lg shadow-md"
-      whileHover={{ scale: 1.05 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-     >
-      <h3 className="text-xl font-semibold mb-2 text-white">
-       Own a Piece of the Future
-      </h3>
-      <h4 className="text-lg font-medium mb-4 text-background-light">
-       Tokenize. Invest. Empower.
-      </h4>
-      <p className="text-background-light">
-       Innovatr is revolutionizing ownership and investment by leveraging
-       blockchain technology to make high-value assets and intellectual property
-       (IP) accessible to everyone. From music to art and beyond, Innovatr
-       enables fractional ownership in a decentralized, transparent, and secure
-       way.
-      </p>
-     </motion.div>
-     <motion.div
-      className="bg-gray-800 p-6 rounded-lg shadow-md"
-      whileHover={{ scale: 1.05 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-     >
-      <h3 className="text-xl font-semibold mb-2 text-white">
-       Fine Art & Digital Art
-      </h3>
-      <h4 className="text-lg font-medium mb-4 text-gray-400">
-       Democratizing art investment
-      </h4>
-      <p className="text-gray-300">
-       Through Innovatr, artists can tokenize both physical and digital
-       artworks, offering investors the ability to own fractional shares of
-       high-value pieces. This democratizes the art market, allowing collectors
-       and fans to invest in art without the need for large upfront capital,
-       while artists gain a new revenue stream.
-      </p>
-     </motion.div>
-     <motion.div
-      className="bg-gray-800 p-6 rounded-lg shadow-md"
-      whileHover={{ scale: 1.05 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-     >
-      <h3 className="text-xl font-semibold mb-2 text-white">Music Industry</h3>
-      <h4 className="text-lg font-medium mb-4 text-gray-400">
-       Empower artists and fans
-      </h4>
-      <p className="text-gray-300">
-       Innovatr empowers musicians and artists to tokenize their albums, songs,
-       and royalties, giving fans the opportunity to invest in their favorite
-       creators. By owning fractional shares of music assets, supporters can
-       share in the financial success of their favorite artists, while creators
-       retain greater control over their work.
-      </p>
-     </motion.div>
-     <motion.div
-      className="bg-gray-800 p-6 rounded-lg shadow-md"
-      whileHover={{ scale: 1.05 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-     >
-      <h3 className="text-xl font-semibold mb-2 text-white">Real Estate</h3>
-      <h4 className="text-lg font-medium mb-4 text-gray-400">
-       Democratizing property investment
-      </h4>
-      <p className="text-gray-300">
-       Innovatr allows property owners to tokenize real estate assets, enabling
-       fractional ownership of commercial and residential properties. Investors
-       can buy and trade shares in real estate projects, making property
-       investment more accessible, while property owners can raise capital
-       without selling entire properties.
-      </p>
-     </motion.div>
+     <FeatureCard
+      title="Own a Piece of the Future"
+      subtitle="Tokenize. Invest. Empower."
+      description="Innovatr is revolutionizing ownership and investment by leveraging blockchain technology to make high-value assets and intellectual property (IP) accessible to everyone. From music to art and beyond, Innovatr enables fractional ownership in a decentralized, transparent, and secure way."
+      icon="🚀"
+     />
+     <FeatureCard
+      title="Fine Art & Digital Art"
+      subtitle="Democratizing art investment"
+      description="Through Innovatr, artists can tokenize both physical and digital artworks, offering investors the ability to own fractional shares of high-value pieces. This democratizes the art market, allowing collectors and fans to invest in art without the need for large upfront capital, while artists gain a new revenue stream."
+      icon="🎨"
+     />
+     <FeatureCard
+      title="Music Industry"
+      subtitle="Empower artists and fans"
+      description="Innovatr empowers musicians and artists to tokenize their albums, songs, and royalties, giving fans the opportunity to invest in their favorite creators. By owning fractional shares of music assets, supporters can share in the financial success of their favorite artists, while creators retain greater control over their work."
+      icon="🎵"
+     />
+     <FeatureCard
+      title="Real Estate"
+      subtitle="Democratizing property investment"
+      description="Innovatr allows property owners to tokenize real estate assets, enabling fractional ownership of commercial and residential properties. Investors can buy and trade shares in real estate projects, making property investment more accessible, while property owners can raise capital without selling entire properties."
+      icon="🏠"
+     />
     </div>
    </section>
 
