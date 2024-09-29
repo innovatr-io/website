@@ -63,7 +63,7 @@ export default function Solutions() {
 
  return (
   <Layout>
-   <GradientBanner className="h-[400px] mb-16">
+   <GradientBanner className="mb-16">
     <motion.h1
      className="text-4xl font-bold mb-4 text-white text-center"
      initial={{ opacity: 0, y: -50 }}
