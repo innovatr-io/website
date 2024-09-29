@@ -12,7 +12,7 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-dark">
+      <span className="absolute flex items-center justify-center w-6 h-6 bg-cosmos-primary rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary">
         {icon}
       </span>
       <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
