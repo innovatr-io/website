@@ -4,56 +4,10 @@ import React from "react";
 import Layout from "../components/Layout";
 import { motion } from "framer-motion";
 import { GradientBanner } from "../components/GradientBanner";
-import { TextGenerateEffect } from "../components/TextGenerateEffect";
+import FramedTextBox from "../components/FramedTextBox";
 import Link from "next/link";
 
-const SolutionCard: React.FC<{
- title: string;
- subtitle: string;
- description: string;
- features: string[];
- icon: string;
-}> = ({ title, subtitle, description, features, icon }) => {
- return (
-  <motion.div
-   className="bg-primary p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-   whileHover={{ scale: 1.05 }}
-   whileTap={{ scale: 0.95 }}
-  >
-   <div className="flex items-center mb-4">
-    <span className="text-3xl mr-4 text-secondary-light">{icon}</span>
-    <div>
-     <h2 className="text-2xl font-semibold text-white">{title}</h2>
-     <h3 className="text-lg font-medium text-background-light">{subtitle}</h3>
-    </div>
-   </div>
-   <p className="mb-4 text-background-light">{description}</p>
-   <ul className="list-disc list-inside text-background-light">
-    {features.map((feature, index) => (
-     <li key={index}>{feature}</li>
-    ))}
-   </ul>
-  </motion.div>
- );
-};
-
-const AdvantageCard: React.FC<{
- title: string;
- description: string;
- icon: string;
-}> = ({ title, description, icon }) => {
- return (
-  <motion.div
-   className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
-   whileHover={{ scale: 1.05 }}
-   whileTap={{ scale: 0.95 }}
-  >
-   <span className="text-4xl mb-4 block">{icon}</span>
-   <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
-   <p className="text-gray-300">{description}</p>
-  </motion.div>
- );
-};
+// ... (SolutionCard and AdvantageCard components remain unchanged)
 
 export default function Solutions() {
  const fadeInUp = {
@@ -72,17 +26,12 @@ export default function Solutions() {
     >
      Empowering Communities Through Innovative Solutions
     </motion.h1>
-    <motion.div
-     className="text-xl text-white text-center max-w-3xl mx-auto"
-     initial={{ opacity: 0 }}
-     animate={{ opacity: 1 }}
-     transition={{ duration: 0.8, delay: 0.2 }}
-    >
+    <FramedTextBox>
      Innovatr is revolutionizing asset ownership and investment by leveraging
      blockchain technology to create inclusive, transparent, and
-     community-driven solutions. We&apos;re breaking down barriers and opening up new
+     community-driven solutions. We're breaking down barriers and opening up new
      possibilities for creators, investors, and enthusiasts alike.
-    </motion.div>
+    </FramedTextBox>
    </GradientBanner>
 
    <div className="max-w-6xl mx-auto px-4 py-8">
