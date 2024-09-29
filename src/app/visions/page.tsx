@@ -3,6 +3,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { motion } from "framer-motion";
+import { TextGenerateEffect } from "../components/TextGenerateEffect";
 
 const VisionSection = ({ title, content }: { title: string; content: string }) => (
   <section className="mb-8">
@@ -36,9 +37,7 @@ export default function Visions() {
             Our Vision: A Future Where Ownership is for Everyone
           </motion.h1>
           <FramedVisionStatement>
-            <p className="text-lg mb-6">
-              At Innovatr, we believe that ownership shouldn't be exclusive. We're building a platform where creators and investors unite to unlock the full potential of tokenized assets and intellectual property.
-            </p>
+            <TextGenerateEffect words="At Innovatr, we believe that ownership shouldn't be exclusive. We're building a platform where creators and investors unite to unlock the full potential of tokenized assets and intellectual property." />
           </FramedVisionStatement>
           <VisionSection
             title="Breaking Down Barriers"
