@@ -5,12 +5,15 @@ import Layout from "../components/Layout";
 import { motion } from "framer-motion";
 import FramedTextBox from "../components/FramedTextBox";
 
+// Import SVG components
+import { TokenIcon, ChainIcon, CreatorIcon, InvestmentIcon, KeyIcon, FeeIcon, SecurityIcon, AccessIcon } from "../components/Icons";
+
 const SolutionCard: React.FC<{
  title: string;
  subtitle: string;
  description: string;
  features: string[];
- icon: string;
+ icon: React.ReactNode;
 }> = ({ title, subtitle, description, features, icon }) => {
  return (
   <motion.div
@@ -19,7 +22,7 @@ const SolutionCard: React.FC<{
    whileTap={{ scale: 0.95 }}
   >
    <div className="flex items-center mb-4">
-    <span className="text-3xl mr-4 text-cosmos-accent">{icon}</span>
+    <div className="w-12 h-12 mr-4 text-cosmos-accent">{icon}</div>
     <div>
      <h2 className="text-2xl font-semibold text-white">{title}</h2>
      <h3 className="text-lg font-medium text-cosmos-text-gray">{subtitle}</h3>
@@ -38,7 +41,7 @@ const SolutionCard: React.FC<{
 const AdvantageCard: React.FC<{
  title: string;
  description: string;
- icon: string;
+ icon: React.ReactNode;
 }> = ({ title, description, icon }) => {
  return (
   <motion.div
@@ -46,7 +49,7 @@ const AdvantageCard: React.FC<{
    whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(94, 226, 231, 0.3)" }}
    whileTap={{ scale: 0.95 }}
   >
-   <span className="text-4xl mb-4 block text-cosmos-accent">{icon}</span>
+   <div className="w-16 h-16 mb-4 text-cosmos-accent">{icon}</div>
    <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
    <p className="text-cosmos-text-light">{description}</p>
   </motion.div>
@@ -113,7 +116,7 @@ export default function Solutions() {
           "Access to previously inaccessible investments",
           "Transparent and secure ownership records",
          ]}
-         icon="🪙"
+         icon={<TokenIcon className="w-full h-full" />}
         />
        </motion.div>
        <motion.div variants={fadeInUp}>
@@ -126,7 +129,7 @@ export default function Solutions() {
           "Enhanced liquidity and security",
           "Integration with DeFi ecosystems",
          ]}
-         icon="🔗"
+         icon={<ChainIcon className="w-full h-full" />}
         />
        </motion.div>
        <motion.div variants={fadeInUp}>
@@ -139,7 +142,7 @@ export default function Solutions() {
           "Tokenization of creative works",
           "New revenue streams for creators",
          ]}
-         icon="🎨"
+         icon={<CreatorIcon className="w-full h-full" />}
         />
        </motion.div>
        <motion.div variants={fadeInUp}>
@@ -152,7 +155,7 @@ export default function Solutions() {
           "Diversification opportunities",
           "Access to high-value asset investments",
          ]}
-         icon="💼"
+         icon={<InvestmentIcon className="w-full h-full" />}
         />
        </motion.div>
        <motion.div variants={fadeInUp}>
@@ -165,7 +168,7 @@ export default function Solutions() {
           "Staking rewards",
           "Exclusive platform benefits",
          ]}
-         icon="🔑"
+         icon={<KeyIcon className="w-full h-full" />}
         />
        </motion.div>
       </motion.div>
@@ -194,21 +197,21 @@ export default function Solutions() {
         <AdvantageCard
          title="Lower Fees"
          description="By using blockchain technology, we cut out unnecessary middlemen, which means lower fees for both creators and investors."
-         icon="💰"
+         icon={<FeeIcon className="w-full h-full" />}
         />
        </motion.div>
        <motion.div variants={fadeInUp}>
         <AdvantageCard
          title="Decentralized & Transparent"
          description="All transactions are secured on the blockchain, ensuring transparency and trust between creators and their supporters."
-         icon="🔒"
+         icon={<SecurityIcon className="w-full h-full" />}
         />
        </motion.div>
        <motion.div variants={fadeInUp}>
         <AdvantageCard
          title="Inclusive Access"
          description="Innovatr makes it possible for everyone to participate in the future of ownership, from fans to investors looking for promising opportunities."
-         icon="🌍"
+         icon={<AccessIcon className="w-full h-full" />}
         />
        </motion.div>
       </motion.div>
