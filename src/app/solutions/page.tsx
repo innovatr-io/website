@@ -70,7 +70,7 @@ export default function Solutions() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Communities are the thriving factor of our solutions
+          Empowering Communities Through Innovative Solutions
         </motion.h1>
         <motion.div
           className="text-xl text-white text-center max-w-3xl mx-auto"
@@ -78,7 +78,7 @@ export default function Solutions() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <TextGenerateEffect words="In today's world, ownership of high-value assets and intellectual property is largely inaccessible to the broader market. Whether it's music royalties, fine art, real estate, or creative intellectual property, the gatekeepers have traditionally been large corporations and a small group of well-capitalized investors. Innovatr is here to change that." />
+          <TextGenerateEffect words="Innovatr is revolutionizing asset ownership and investment by leveraging blockchain technology to create inclusive, transparent, and community-driven solutions. We're breaking down barriers and opening up new possibilities for creators, investors, and enthusiasts alike." />
         </motion.div>
       </GradientBanner>
 
@@ -90,7 +90,7 @@ export default function Solutions() {
           animate="animate"
           transition={{ duration: 0.6 }}
         >
-          What do we bring to the Market?
+          Our Innovative Solutions
         </motion.h2>
         <motion.p 
           className="text-lg mb-8 text-center" 
