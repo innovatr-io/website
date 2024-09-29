@@ -205,6 +205,18 @@ export default function Solutions() {
           </motion.div>
         </motion.div>
 
+        <motion.div 
+          className="mt-16"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl font-bold mb-6 text-center">A New Era of Ownership</h2>
+          <p className="text-lg text-gray-300 mb-8">
+            Innovatr offers a revolutionary solution to the traditional barriers that have limited access to ownership and investment. By combining the power of blockchain, multichain flexibility, and tokenized assets, we're creating a future where ownership is democratized, transparent, and accessible to everyone. Whether you're a creator looking to maintain control over your work or an investor eager to own a piece of the future, Innovatr is here to make it happen.
+          </p>
+        </motion.div>
+
         <motion.div className="text-center" {...fadeInUp}>
           <Link href="/" className="btn btn-primary">Back to Home</Link>
         </motion.div>
