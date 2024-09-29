@@ -6,9 +6,9 @@ import { Timeline } from "../components/Timeline";
 import dynamic from "next/dynamic";
 import {
  LightningIcon,
- ArtIcon,
  MusicIcon,
  RealEstateIcon,
+ CreatorIcon,
 } from "../components/Icons";
 import FeatureCard from "../components/FeatureCard";
 import { motion } from "framer-motion";
@@ -47,7 +47,7 @@ export default function About() {
       title="Fine Art & Digital Art"
       subtitle="Democratizing art investment"
       description="Through Innovatr, artists can tokenize both physical and digital artworks, offering investors the ability to own fractional shares of high-value pieces. This democratizes the art market, allowing collectors and fans to invest in art without the need for large upfront capital, while artists gain a new revenue stream."
-      icon={<ArtIcon className="w-6 h-6 text-cosmos-primary" />}
+      icon={<CreatorIcon className="w-6 h-6 text-cosmos-primary" />}
      />
      <FeatureCard
       title="Music Industry"

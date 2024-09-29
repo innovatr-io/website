@@ -16,7 +16,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, subtitle, description,
       whileTap={{ scale: 0.95 }}
     >
       <div className="flex items-center mb-4">
-        <div className="w-12 h-12 mr-4 flex items-center justify-center bg-cosmos-accent rounded-full">
+        <div className="w-12 h-12 mr-4 flex items-center justify-center rounded-full">
           {icon}
         </div>
         <div>
