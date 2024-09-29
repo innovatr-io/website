@@ -5,8 +5,8 @@ import { GradientBanner } from './components/GradientBanner';
 export default function Home() {
   return (
     <Layout>
-      <section className="w-full">
-        <GradientBanner className="h-screen">
+      <section className="w-full h-[600px]">
+        <GradientBanner className="h-full">
           <h1 className="text-5xl font-bold mb-8 text-white drop-shadow-lg">Welcome to innovatr</h1>
           <p className="text-2xl mb-8 text-white drop-shadow-md">Innovating for a better future</p>
           <div className="flex space-x-4">
