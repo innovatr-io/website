@@ -1,7 +1,6 @@
 "use client";
 
 import Layout from "../components/Layout";
-import { GradientBanner } from "../components/GradientBanner";
 import { TextGenerateEffect } from "../components/TextGenerateEffect";
 import { Timeline } from "../components/Timeline";
 import dynamic from "next/dynamic";
@@ -15,17 +14,17 @@ export default function About() {
  return (
   <Layout>
    <section className="w-full h-[600px] flex flex-col items-center justify-center">
-     <motion.h1
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="text-5xl font-bold mb-8 text-white drop-shadow-lg"
-     >
-      Revolutionizing Ownership
-     </motion.h1>
-     <p className="text-2xl mb-8 text-white drop-shadow-md">
-      <TextGenerateEffect words="A unique community driven fractional ownership platform" />
-     </p>
+    <motion.h1
+     initial={{ opacity: 0, y: -50 }}
+     animate={{ opacity: 1, y: 0 }}
+     transition={{ duration: 0.8, ease: "easeOut" }}
+     className="text-5xl font-bold mb-8 text-white drop-shadow-lg"
+    >
+     Revolutionizing Ownership
+    </motion.h1>
+    <p className="text-2xl mb-8 text-white drop-shadow-md">
+     <TextGenerateEffect words="A unique community driven fractional ownership platform" />
+    </p>
    </section>
 
    <section className="w-full max-w-6xl mx-auto py-16 px-4">
