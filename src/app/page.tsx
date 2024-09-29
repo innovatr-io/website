@@ -6,6 +6,7 @@ import { GradientBanner } from "./components/GradientBanner";
 import { TextGenerateEffect } from "./components/TextGenerateEffect";
 import { Timeline } from "./components/Timeline";
 import dynamic from "next/dynamic";
+import { motion } from "framer-motion";
 
 const PieChart = dynamic(() => import("./components/PieChart"), { ssr: false });
 
@@ -14,9 +15,14 @@ export default function Home() {
   <Layout>
    <section className="w-full h-[600px]">
     <GradientBanner className="h-full">
-     <h1 className="text-5xl font-bold mb-8 text-white drop-shadow-lg">
+     <motion.h1 
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="text-5xl font-bold mb-8 text-white drop-shadow-lg"
+     >
       Revolutionizing Ownership
-     </h1>
+     </motion.h1>
      <p className="text-2xl mb-8 text-white drop-shadow-md">
       <TextGenerateEffect words="A unique community driven fractional ownership platform" />
      </p>
