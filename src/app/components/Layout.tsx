@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import Footer from './Footer';
+import { GradientBanner } from './GradientBanner';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col min-h-screen bg-cosmos-background text-cosmos-text-light">
-      <nav className="navbar bg-cosmos-primary/70 text-cosmos-text-light backdrop-blur-md fixed top-0 left-0 right-0 z-50">
+      <GradientBanner className="fixed inset-0 z-0" />
+      <nav className="navbar bg-cosmos-primary/70 text-cosmos-text-light backdrop-blur-md fixed top-0 left-0 right-0 z-10">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost normal-case text-xl">Innovatr</Link>
         </div>
@@ -16,7 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </ul>
         </div>
       </nav>
-      <main className="flex-grow flex flex-col items-center justify-start pt-16">
+      <main className="flex-grow flex flex-col items-center justify-start pt-16 relative z-10">
         {children}
       </main>
       <Footer />

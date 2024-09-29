@@ -14,8 +14,7 @@ const PieChart = dynamic(() => import("../components/PieChart"), {
 export default function About() {
  return (
   <Layout>
-   <section className="w-full h-[600px]">
-    <GradientBanner className="h-full">
+   <section className="w-full h-[600px] flex flex-col items-center justify-center">
      <motion.h1
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
@@ -27,7 +26,6 @@ export default function About() {
      <p className="text-2xl mb-8 text-white drop-shadow-md">
       <TextGenerateEffect words="A unique community driven fractional ownership platform" />
      </p>
-    </GradientBanner>
    </section>
 
    <section className="w-full max-w-6xl mx-auto py-16 px-4">
