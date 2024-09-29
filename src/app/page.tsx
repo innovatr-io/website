@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Layout from './components/Layout';
 import { GradientBanner } from './components/GradientBanner';
+import { TextGenerateEffect } from './components/TextGenerateEffect';
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
           <h1 className="text-5xl font-bold mb-8 text-white drop-shadow-lg">
             Revolutionizing Ownership
           </h1>
-          <p className="text-2xl mb-8 text-white drop-shadow-md">A unique community driven fractional ownership platform</p>
+          <p className="text-2xl mb-8 text-white drop-shadow-md">
+            <TextGenerateEffect words="A unique community driven fractional ownership platform" />
+          </p>
           <div className="flex space-x-4">
             <Link href="/solutions" className="btn btn-primary btn-lg">Our Solutions</Link>
             <Link href="/visions" className="btn btn-secondary btn-lg">Our Visions</Link>
