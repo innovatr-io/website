@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: theme('colors.background.DEFAULT');
-  --foreground: theme('colors.text.DEFAULT');
+  --background: theme('colors.cosmos.background');
+  --foreground: theme('colors.cosmos.text.light');
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: theme('colors.background.dark');
-    --foreground: theme('colors.text.dark');
+    --background: theme('colors.cosmos.background');
+    --foreground: theme('colors.cosmos.text.light');
   }
 }
 
