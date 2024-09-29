@@ -13,10 +13,10 @@ const VisionSection = ({ title, content }: { title: string; content: string }) =
 export default function Visions() {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8 bg-background-light dark:bg-background-dark">
         <main className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8">Our Vision: A Future Where Ownership is for Everyone</h1>
-          <p className="text-xl mb-12">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 text-primary-dark dark:text-primary-light">Our Vision: A Future Where Ownership is for Everyone</h1>
+          <p className="text-xl mb-12 text-text-dark dark:text-text-light">
             At Innovatr, we believe that ownership shouldn't be exclusive. We're building a platform where creators and investors unite to unlock the full potential of tokenized assets and intellectual property.
           </p>
           <VisionSection

@@ -41,17 +41,17 @@ export default function Home() {
     <h2 className="text-3xl font-bold mb-12 text-center">Key Features</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
      <motion.div 
-      className="bg-gray-800 p-6 rounded-lg shadow-md"
+      className="bg-primary p-6 rounded-lg shadow-md"
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300, damping: 20 }}
      >
       <h3 className="text-xl font-semibold mb-2 text-white">
        Own a Piece of the Future
       </h3>
-      <h4 className="text-lg font-medium mb-4 text-gray-400">
+      <h4 className="text-lg font-medium mb-4 text-background-light">
        Tokenize. Invest. Empower.
       </h4>
-      <p className="text-gray-300">
+      <p className="text-background-light">
        Innovatr is revolutionizing ownership and investment by leveraging
        blockchain technology to make high-value assets and intellectual property
        (IP) accessible to everyone. From music to art and beyond, Innovatr

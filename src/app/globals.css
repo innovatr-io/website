@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: theme('colors.background.DEFAULT');
+  --foreground: theme('colors.text.DEFAULT');
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: theme('colors.background.dark');
+    --foreground: theme('colors.text.dark');
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-kode-mono), Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {

@@ -16,19 +16,19 @@ const SolutionCard: React.FC<{
 }> = ({ title, subtitle, description, features, icon }) => {
  return (
   <motion.div
-   className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+   className="bg-primary p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
    whileHover={{ scale: 1.05 }}
    whileTap={{ scale: 0.95 }}
   >
    <div className="flex items-center mb-4">
-    <span className="text-3xl mr-4">{icon}</span>
+    <span className="text-3xl mr-4 text-secondary-light">{icon}</span>
     <div>
      <h2 className="text-2xl font-semibold text-white">{title}</h2>
-     <h3 className="text-lg font-medium text-gray-400">{subtitle}</h3>
+     <h3 className="text-lg font-medium text-background-light">{subtitle}</h3>
     </div>
    </div>
-   <p className="mb-4 text-gray-300">{description}</p>
-   <ul className="list-disc list-inside text-gray-300">
+   <p className="mb-4 text-background-light">{description}</p>
+   <ul className="list-disc list-inside text-background-light">
     {features.map((feature, index) => (
      <li key={index}>{feature}</li>
     ))}
