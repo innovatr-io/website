@@ -8,7 +8,7 @@ export default function Home() {
  return (
   <div className="relative min-h-screen">
     <GradientBanner className="absolute inset-0 z-0" />
-    <Layout className="relative z-10">
+    <Layout>
       <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold mb-8 text-cosmos-text-light">Welcome to Innovatr</h1>
         <p className="mb-12 text-lg text-cosmos-text-light text-center max-w-2xl">
