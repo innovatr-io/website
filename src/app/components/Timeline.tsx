@@ -12,22 +12,32 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <span className="absolute flex items-center justify-center w-6 h-6 bg-cosmos-primary rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary">
-        {icon}
-      </span>
-      <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-        {title}
-        <span className="bg-primary-light text-primary-dark text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light ml-3">
-          {year}
+      <motion.div
+        className="flex items-center"
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <span className="flex items-center justify-center w-6 h-6 bg-cosmos-primary rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary mr-4">
+          {icon}
         </span>
-      </h3>
-      <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>
-      <button className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-dark focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-dark dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-        Learn more 
-        <svg className="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-        </svg>
-      </button>
+        <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+          {title}
+          <span className="bg-primary-light text-primary-dark text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light ml-3">
+            {year}
+          </span>
+        </h3>
+      </motion.div>
+      <div className="ml-10">
+        <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>
+        <button className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-dark focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-dark dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+          Learn more 
+          <svg className="w-3 h-3 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg>
+        </button>
+      </div>
     </motion.li>
   );
 };
