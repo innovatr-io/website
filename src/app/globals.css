@@ -53,4 +53,28 @@ body::before {
   .border-gradient-to-r {
     border-image: linear-gradient(to right, var(--cosmos-primary), var(--cosmos-secondary), var(--cosmos-accent)) 1;
   }
+
+  @keyframes border-move-tl {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(5px, 0); }
+    50% { transform: translate(5px, 5px); }
+    75% { transform: translate(0, 5px); }
+    100% { transform: translate(0, 0); }
+  }
+
+  @keyframes border-move-br {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(-5px, -5px); }
+    75% { transform: translate(0, -5px); }
+    100% { transform: translate(0, 0); }
+  }
+
+  .animate-border-tl {
+    animation: border-move-tl 10s infinite linear;
+  }
+
+  .animate-border-br {
+    animation: border-move-br 10s infinite linear;
+  }
 }

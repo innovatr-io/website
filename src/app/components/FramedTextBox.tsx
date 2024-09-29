@@ -16,8 +16,8 @@ const FramedTextBox: React.FC<FramedTextBoxProps> = ({ children, useTextGenerate
         children
       )}
     </div>
-    <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-cosmos-accent"></div>
-    <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-cosmos-accent"></div>
+    <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-cosmos-accent animate-border-tl"></div>
+    <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-cosmos-accent animate-border-br"></div>
   </div>
 );
 
