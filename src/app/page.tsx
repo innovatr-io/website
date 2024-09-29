@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <Layout>
       <GradientBanner>
-        <h1 className="text-4xl font-bold mb-8 relative z-20 text-white">Welcome to innovatr</h1>
-        <p className="text-xl mb-8 relative z-20 text-gray-300">Innovating for a better future</p>
-        <div className="flex space-x-4 relative z-20">
-          <Link href="/solutions" className="btn btn-primary">Our Solutions</Link>
-          <Link href="/visions" className="btn btn-secondary">Our Visions</Link>
+        <h1 className="text-5xl font-bold mb-8 text-white drop-shadow-lg">Welcome to innovatr</h1>
+        <p className="text-2xl mb-8 text-white drop-shadow-md">Innovating for a better future</p>
+        <div className="flex space-x-4">
+          <Link href="/solutions" className="btn btn-primary btn-lg">Our Solutions</Link>
+          <Link href="/visions" className="btn btn-secondary btn-lg">Our Visions</Link>
         </div>
       </GradientBanner>
     </Layout>

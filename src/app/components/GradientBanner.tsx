@@ -11,49 +11,49 @@ export const GradientBanner = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("h-[40rem] w-full bg-gray-900 relative flex items-center justify-center", className)}>
-      {/* Radial gradient for the container to give a faded look */}
-      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-gray-900 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      <div className="relative z-20 h-full w-full bg-gray-900 flex flex-col items-center justify-center text-center">
-        {/* Gradient Beam */}
+    <div className={cn("h-[40rem] w-full relative flex flex-col items-center justify-center overflow-hidden", className)}>
+      <div className="absolute inset-0 w-full h-full bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+      <div className="absolute inset-0 w-full h-full">
+        <div className="absolute top-0 left-0 right-0 bottom-16 bg-gradient-to-r from-blue-500 to-teal-500 opacity-0"></div>
+        <div className="absolute top-0 left-8 right-8 bottom-8 bg-gradient-to-r from-rose-500 to-purple-500 opacity-0"></div>
+        <div className="absolute top-8 left-0 right-0 bottom-0 bg-gradient-to-r from-teal-500 to-blue-500 opacity-0"></div>
         <motion.div
           animate={{
-            opacity: [0.5, 1, 0.5],
-            width: ["15rem", "30rem", "15rem"],
-            rotate: [0, 180, 360],
+            opacity: [0, 1, 0],
           }}
           transition={{
-            duration: 10,
-            ease: "easeInOut",
             repeat: Infinity,
-            repeatType: "reverse",
+            duration: 5,
+            ease: "easeInOut",
           }}
-          style={{
-            backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
-          }}
-          className="absolute inset-auto right-1/2 h-56 overflow-hidden [--conic-position:from_70deg_at_center_top] 
-          bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600
-          opacity-70 blur-2xl"
-        ></motion.div>
+          className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500"
+        />
         <motion.div
           animate={{
-            opacity: [0.5, 1, 0.5],
-            width: ["15rem", "30rem", "15rem"],
-            rotate: [360, 180, 0],
+            opacity: [0, 1, 0],
           }}
           transition={{
-            duration: 10,
-            ease: "easeInOut",
             repeat: Infinity,
-            repeatType: "reverse",
+            duration: 5,
+            ease: "easeInOut",
+            delay: 2,
           }}
-          style={{
-            backgroundImage: `conic-gradient(var(--conic-position), var(--tw-gradient-stops))`,
+          className="absolute inset-0 bg-gradient-to-r from-rose-500 to-purple-500"
+        />
+        <motion.div
+          animate={{
+            opacity: [0, 1, 0],
           }}
-          className="absolute inset-auto left-1/2 h-56 overflow-hidden [--conic-position:from_290deg_at_center_top]
-          bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600
-          opacity-70 blur-2xl"
-        ></motion.div>
+          transition={{
+            repeat: Infinity,
+            duration: 5,
+            ease: "easeInOut",
+            delay: 4,
+          }}
+          className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-500"
+        />
+      </div>
+      <div className="relative z-20 flex flex-col items-center justify-center text-center">
         {children}
       </div>
     </div>
