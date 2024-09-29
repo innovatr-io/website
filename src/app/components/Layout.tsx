@@ -10,6 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
+            <li><Link href="/about" className="hover:text-cosmos-accent">About</Link></li>
             <li><Link href="/solutions" className="hover:text-cosmos-accent">Solutions</Link></li>
             <li><Link href="/visions" className="hover:text-cosmos-accent">Visions</Link></li>
           </ul>
