@@ -19,7 +19,7 @@ export const GradientBanner = ({
         <div className="absolute top-8 left-0 right-0 bottom-0 bg-gradient-to-r from-teal-500 to-blue-500 opacity-0"></div>
         <motion.div
           animate={{
-            opacity: [0, 1, 0],
+            opacity: [0, .5, 0],
           }}
           transition={{
             repeat: Infinity,
@@ -30,7 +30,7 @@ export const GradientBanner = ({
         />
         <motion.div
           animate={{
-            opacity: [0, 1, 0],
+            opacity: [0, .2, 0],
           }}
           transition={{
             repeat: Infinity,
@@ -42,7 +42,7 @@ export const GradientBanner = ({
         />
         <motion.div
           animate={{
-            opacity: [0, 1, 0],
+            opacity: [0, .7, 0],
           }}
           transition={{
             repeat: Infinity,
