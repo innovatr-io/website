@@ -9,7 +9,7 @@ const images = [
  "https://dummyimage.com/16:9x1080",
 ];
 
-export const HeroImageSlider = () => {
+export const LandingHeroImageSlider = () => {
  return (
   <ImagesSlider className="h-[66vh] w-full" images={images}>
    <motion.div

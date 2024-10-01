@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TextGenerateEffect } from "../components/TextGenerateEffect";
 import FramedTextBox from "../components/FramedTextBox";
 
 export const SolutionsHeroSection = () => {
