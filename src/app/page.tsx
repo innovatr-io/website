@@ -3,6 +3,23 @@
 import Layout from "./components/Layout";
 import { GradientBanner } from "./components/GradientBanner";
 import { RocketIcon, LightbulbIcon, ShieldIcon } from "@/app/components/Icons";
+import { ImageSlider } from "@/components/ui/image-slider";
+
+const images = [
+  {
+    src: "/path/to/image1.jpg",
+    alt: "Image 1 description",
+  },
+  {
+    src: "/path/to/image2.jpg",
+    alt: "Image 2 description",
+  },
+  {
+    src: "/path/to/image3.jpg",
+    alt: "Image 3 description",
+  },
+  // Add more images as needed
+];
 
 export default function Home() {
  return (
@@ -14,6 +31,9 @@ export default function Home() {
         <p className="mb-12 text-lg text-cosmos-text-light text-center max-w-2xl">
           Revolutionizing ownership through blockchain technology. Democratizing access to high-value assets and intellectual property.
         </p>
+        <div className="w-full max-w-4xl mb-12">
+          <ImageSlider images={images} />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="text-center">
             <RocketIcon className="w-12 h-12 mx-auto text-cosmos-accent" />
