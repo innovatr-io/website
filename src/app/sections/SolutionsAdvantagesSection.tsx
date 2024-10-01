@@ -28,7 +28,7 @@ export const SolutionsAdvantagesSection = () => {
  };
 
  return (
-  <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
+  <section className="w-full max-w-6xl mx-auto py-16 px-4">
    <motion.h2
     className="text-3xl font-bold mb-8 text-center text-white"
     {...fadeInUp}

@@ -46,7 +46,7 @@ export const SolutionsKeyFeaturesSection = () => {
  };
 
  return (
-  <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
+  <section className="w-full max-w-6xl mx-auto py-16 px-4">
    <motion.h3
     className="text-2xl font-semibold mb-6 text-center text-white"
     variants={fadeInUp}

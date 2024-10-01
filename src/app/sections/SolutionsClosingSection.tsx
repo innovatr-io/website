@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const SolutionsClosingSection = () => {
  return (
-  <section className="w-full py-16 px-4 sm:px-6 lg:px-8">
+  <section className="w-full max-w-6xl mx-auto py-16 px-4">
    <motion.div
     className="max-w-4xl mx-auto"
     initial={{ opacity: 0, y: 50 }}
