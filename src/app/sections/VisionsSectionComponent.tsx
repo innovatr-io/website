@@ -7,16 +7,21 @@ interface VisionSectionProps {
  content: string;
 }
 
-export const VisionsSectionComponent: React.FC<VisionSectionProps> = ({ title, content }) => {
+export const VisionsSectionComponent: React.FC<VisionSectionProps> = ({
+ title,
+ content,
+}) => {
  return (
-  <motion.section 
-   className="mb-8"
-   initial={{ opacity: 0, y: 50 }}
-   animate={{ opacity: 1, y: 0 }}
-   transition={{ duration: 0.5 }}
-  >
-   <h2 className="text-xl sm:text-2xl font-semibold mb-3">{title}</h2>
-   <p className="text-base">{content}</p>
-  </motion.section>
+  <section className="w-full flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+   <motion.div
+    className="mb-8"
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5 }}
+   >
+    <h2 className="text-xl sm:text-2xl font-semibold mb-3">{title}</h2>
+    <p className="text-base">{content}</p>
+   </motion.div>
+  </section>
  );
 };

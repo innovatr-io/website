@@ -5,12 +5,12 @@ import { TextGenerateEffect } from "../components/TextGenerateEffect";
 
 export const AboutHeroSection = () => {
  return (
-  <section className="w-full h-[600px] flex flex-col items-center justify-center">
+  <section className="w-full flex flex-col items-center justify-center text-center py-12 px-4 sm:px-6 lg:px-8">
    <motion.h1
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, ease: "easeOut" }}
-    className="text-5xl font-bold mb-8 text-white drop-shadow-lg"
+    className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white "
    >
     Revolutionizing Ownership
    </motion.h1>

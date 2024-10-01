@@ -5,7 +5,7 @@ import FramedTextBox from "../components/FramedTextBox";
 
 export const SolutionsHeroSection = () => {
  return (
-  <section className="w-full flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+  <section className="w-full flex flex-col items-center justify-center text-center py-12 px-4 sm:px-6 lg:px-8">
    <motion.h1
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}

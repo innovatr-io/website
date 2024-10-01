@@ -10,14 +10,10 @@ import { SolutionsClosingSection } from "../sections/SolutionsClosingSection";
 export default function Solutions() {
  return (
   <Layout>
-   <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8 text-cosmos-text-light">
-    <main className="max-w-4xl mx-auto text-center">
-     <SolutionsHeroSection />
-     <SolutionsKeyFeaturesSection />
-     <SolutionsAdvantagesSection />
-     <SolutionsClosingSection />
-    </main>
-   </div>
+   <SolutionsHeroSection />
+   <SolutionsKeyFeaturesSection />
+   <SolutionsAdvantagesSection />
+   <SolutionsClosingSection />
   </Layout>
  );
 }
