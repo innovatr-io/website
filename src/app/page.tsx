@@ -3,56 +3,85 @@
 import Layout from "./components/Layout";
 import { GradientBanner } from "./components/GradientBanner";
 import { RocketIcon, LightbulbIcon, ShieldIcon } from "@/app/components/Icons";
-import { ImageSlider } from "@/components/ui/image-slider";
+import { ImagesSlider } from "@/app/components/ImageSilder";
+import { motion } from "framer-motion";
 
 const images = [
-  {
-    src: "/path/to/image1.jpg",
-    alt: "Image 1 description",
-  },
-  {
-    src: "/path/to/image2.jpg",
-    alt: "Image 2 description",
-  },
-  {
-    src: "/path/to/image3.jpg",
-    alt: "Image 3 description",
-  },
-  // Add more images as needed
+ "https://dummyimage.com/16:9x1080",
+ "https://dummyimage.com/16:9x1080",
+ "https://dummyimage.com/16:9x1080",
 ];
 
 export default function Home() {
  return (
   <div className="relative min-h-screen">
-    <GradientBanner className="absolute inset-0 z-0" />
-    <Layout>
-      <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold mb-8 text-cosmos-text-light">Welcome to Innovatr</h1>
-        <p className="mb-12 text-lg text-cosmos-text-light text-center max-w-2xl">
-          Revolutionizing ownership through blockchain technology. Democratizing access to high-value assets and intellectual property.
-        </p>
-        <div className="w-full max-w-4xl mb-12">
-          <ImageSlider images={images} />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <div className="text-center">
-            <RocketIcon className="w-12 h-12 mx-auto text-cosmos-accent" />
-            <h3 className="mt-2 text-xl font-semibold text-cosmos-text-light">Innovation</h3>
-            <p className="mt-2 text-cosmos-text-light">Pushing the boundaries of asset ownership</p>
-          </div>
-          <div className="text-center">
-            <LightbulbIcon className="w-12 h-12 mx-auto text-cosmos-accent" />
-            <h3 className="mt-2 text-xl font-semibold text-cosmos-text-light">Creativity</h3>
-            <p className="mt-2 text-cosmos-text-light">Empowering creators and investors</p>
-          </div>
-          <div className="text-center">
-            <ShieldIcon className="w-12 h-12 mx-auto text-cosmos-accent" />
-            <h3 className="mt-2 text-xl font-semibold text-cosmos-text-light">Security</h3>
-            <p className="mt-2 text-cosmos-text-light">Ensuring safe and transparent transactions</p>
-          </div>
-        </div>
+   <GradientBanner className="absolute inset-0 z-0" />
+   <Layout>
+    <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+     <h1 className="text-4xl font-bold mb-8 text-cosmos-text-light">
+      Welcome to Innovatr
+     </h1>
+     <p className="mb-12 text-lg text-cosmos-text-light text-center max-w-2xl">
+      Revolutionizing ownership through blockchain technology. Democratizing
+      access to high-value assets and intellectual property.
+     </p>
+     <div className="w-full max-w-4xl mb-12">
+      <ImagesSlider className="h-[40rem]" images={images}>
+       <motion.div
+        initial={{
+         opacity: 0,
+         y: -80,
+        }}
+        animate={{
+         opacity: 1,
+         y: 0,
+        }}
+        transition={{
+         duration: 0.6,
+        }}
+        className="z-50 flex flex-col justify-center items-center"
+       >
+        <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
+         The hero section slideshow <br /> nobody asked for
+        </motion.p>
+        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+         <span>Join now →</span>
+         <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+        </button>
+       </motion.div>
+      </ImagesSlider>
+     </div>
+     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+      <div className="text-center">
+       <RocketIcon className="w-12 h-12 mx-auto text-cosmos-accent" />
+       <h3 className="mt-2 text-xl font-semibold text-cosmos-text-light">
+        Innovation
+       </h3>
+       <p className="mt-2 text-cosmos-text-light">
+        Pushing the boundaries of asset ownership
+       </p>
       </div>
-    </Layout>
+      <div className="text-center">
+       <LightbulbIcon className="w-12 h-12 mx-auto text-cosmos-accent" />
+       <h3 className="mt-2 text-xl font-semibold text-cosmos-text-light">
+        Creativity
+       </h3>
+       <p className="mt-2 text-cosmos-text-light">
+        Empowering creators and investors
+       </p>
+      </div>
+      <div className="text-center">
+       <ShieldIcon className="w-12 h-12 mx-auto text-cosmos-accent" />
+       <h3 className="mt-2 text-xl font-semibold text-cosmos-text-light">
+        Security
+       </h3>
+       <p className="mt-2 text-cosmos-text-light">
+        Ensuring safe and transparent transactions
+       </p>
+      </div>
+     </div>
+    </div>
+   </Layout>
   </div>
  );
 }
