@@ -3,7 +3,7 @@
 import Layout from "./components/Layout";
 import { GradientBanner } from "./components/GradientBanner";
 import { RocketIcon, LightbulbIcon, ShieldIcon } from "@/app/components/Icons";
-import { HeroImageSlider } from "@/app/sections/HeroImageSlider";
+import { HeroImageSlider } from "@/app/components/HeroImageSlider";
 
 export default function Home() {
  return (
