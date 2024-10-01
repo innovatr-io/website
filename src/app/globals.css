@@ -111,8 +111,25 @@ body {
   opacity: 0;
   transform: translateY(100px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .section-card.slide-in {
   animation: slideIn 0.5s ease forwards;
+}
+
+.section-card:hover {
+  z-index: 2;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

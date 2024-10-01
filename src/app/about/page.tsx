@@ -32,7 +32,7 @@ export default function About() {
 
   return (
     <Layout>
-      <div className="space-y-12">
+      <div className="space-y-24">
         <SectionCard>
           <AboutHeroSection />
         </SectionCard>
