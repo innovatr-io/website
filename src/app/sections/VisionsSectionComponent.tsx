@@ -12,7 +12,7 @@ export const VisionsSectionComponent: React.FC<VisionSectionProps> = ({
  content,
 }) => {
  return (
-  <section className="w-full max-w-6xl mx-auto py-16 px-4">
+  <section className="w-full max-w-6xl mx-auto py-16 px-4 text-center">
    <motion.div
     className="mb-8"
     initial={{ opacity: 0, y: 50 }}
