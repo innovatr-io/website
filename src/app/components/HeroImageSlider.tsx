@@ -11,7 +11,7 @@ const images = [
 
 export const HeroImageSlider = () => {
  return (
-  <ImagesSlider className="h-screen w-full" images={images}>
+  <ImagesSlider className="h-[66vh] w-full" images={images}>
    <motion.div
     initial={{
      opacity: 0,

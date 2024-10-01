@@ -11,14 +11,7 @@ export default function Home() {
    <HeroImageSlider />
    <GradientBanner className="absolute inset-0 z-0" />
    <Layout>
-    <div className="flex flex-col items-center justify-center min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-     <h1 className="text-4xl font-bold mb-8 text-cosmos-text-light">
-      Welcome to Innovatr
-     </h1>
-     <p className="mb-12 text-lg text-cosmos-text-light text-center max-w-2xl">
-      Revolutionizing ownership through blockchain technology. Democratizing
-      access to high-value assets and intellectual property.
-     </p>
+    <div className="flex flex-col items-center justify-center min-h-[34vh] py-12 px-4 sm:px-6 lg:px-8">
      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
       <div className="text-center">
        <RocketIcon className="w-12 h-12 mx-auto text-cosmos-accent" />
