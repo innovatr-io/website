@@ -44,7 +44,7 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
 
 export const Timeline = () => {
   return (
-    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-8">
+    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-8 pl-12">
       <TimelineItem
         year="2024"
         title="Platform Launch"
