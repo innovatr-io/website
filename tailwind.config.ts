@@ -25,7 +25,6 @@ const config: Config = {
     },
    },
    fontFamily: {
-    mono: ["var(--font-kode-mono)", "monospace"],
     sans: ["Gotham", "sans-serif"],
    },
   },
