@@ -10,10 +10,11 @@ export const AboutHeroSection = () => {
    <SparklesCore
     id="tsparticles"
     background="transparent"
-    minSize={0.6}
-    maxSize={1.4}
+    minSize={0.4}
+    maxSize={1.6}
     particleColor="#5EE2E7"
-    particleDensity={100}
+    particleDensity={200}
+    speed={0.5}
     className="absolute inset-0 z-0"
    />
    <motion.h1
