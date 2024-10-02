@@ -154,3 +154,19 @@ body {
     opacity: 1;
   }
 }
+
+/* Innovatr logo styling */
+.innovatr-logo {
+  position: relative;
+}
+
+.innovatr-logo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0.1em; /* Adjust as needed */
+  width: 0.2em; /* Adjust size as needed */
+  height: 0.2em; /* Adjust size as needed */
+  background-color: #006400; /* Dark green color */
+  border-radius: 50%;
+}
