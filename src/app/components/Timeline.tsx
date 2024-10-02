@@ -46,9 +46,9 @@ export const Timeline = () => {
   return (
     <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-8 pl-12">
       <TimelineItem
-        year="2024"
-        title="Platform Launch"
-        description="Release the initial version of our fractional ownership platform, enabling users to invest in a variety of alternative assets."
+        year="Q3 - Q4, 2024"
+        title="Phase 1: Foundation and Platform Development"
+        description="Innovatr Token Launch, Smart Contract Development, Platform MVP Launch"
         icon={
           <svg className="w-6 h-6 text-cosmos-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -56,9 +56,9 @@ export const Timeline = () => {
         }
       />
       <TimelineItem
-        year="2024"
-        title="Expand Asset Offerings"
-        description="Introduce new alternative investment opportunities, such as real estate, private equity, and venture capital funds, to our platform."
+        year="Q4, 2024 - Q2, 2025"
+        title="Phase 2: Community Growth and Music Industry Focus"
+        description="Music Industry Launch, Community Building, Voting Rights Implementation, Staking Rewards"
         icon={
           <svg className="w-6 h-6 text-cosmos-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -66,9 +66,9 @@ export const Timeline = () => {
         }
       />
       <TimelineItem
-        year="2025"
-        title="Mobile App Development"
-        description="Develop and launch a mobile app to provide users with a seamless investment experience on the go."
+        year="Q1 - Q3, 2025"
+        title="Phase 3: Multichain Expansion and Feature Enhancement"
+        description="Multichain Tokenization, Secondary Marketplace, Creator Tools"
         icon={
           <svg className="w-6 h-6 text-cosmos-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -76,12 +76,22 @@ export const Timeline = () => {
         }
       />
       <TimelineItem
-        year="2025"
-        title="Decentralized Exchange Integration"
-        description="Integrate our platform with a decentralized exchange to enable peer-to-peer trading of fractional ownership assets."
+        year="Q3 - Q4, 2025"
+        title="Phase 4: New Industry Expansion and Ecosystem Growth"
+        description="Strategic Partnerships, Expansion to Art, Real Estate, and IP"
         icon={
           <svg className="w-6 h-6 text-cosmos-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+          </svg>
+        }
+      />
+      <TimelineItem
+        year="2026 Onwards"
+        title="Phase 5: Full Platform Launch and Global Scaling"
+        description="Full Platform Launch, Global Scaling, Continuous Feature Enhancement"
+        icon={
+          <svg className="w-6 h-6 text-cosmos-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
         }
       />
