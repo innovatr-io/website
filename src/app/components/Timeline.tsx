@@ -26,7 +26,7 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
           {year}
         </span>
       </motion.div>
-      <div className="ml-6">
+      <div className="ml-12">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
           {title}
         </h3>
