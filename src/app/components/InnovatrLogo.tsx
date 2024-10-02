@@ -13,7 +13,7 @@ const InnovatrLogo: React.FC<{ className?: string }> = ({ className }) => {
       <text x="0" y="20" fill="currentColor" fontSize="24" fontFamily="Gotham, sans-serif">
         innovatr
       </text>
-      <circle cx="5" cy="2" r="2" fill="#006400" />
+      <rect x="3" y="0" width="4" height="4" fill="#006400" />
     </svg>
   );
 };
