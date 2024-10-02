@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </label>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-cosmos-primary rounded-box w-52">
               <li><Link href="/solutions">Solutions</Link></li>
-              <li><Link href="/visions">Visions</Link></li>
+              <li><Link href="/visions">Vision</Link></li>
             </ul>
           </div>
         </div>
