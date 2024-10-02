@@ -10,9 +10,9 @@ import {
 
 export const AboutKeyFeaturesSection = () => {
  return (
-  <section className="w-full max-w-6xl mx-auto py-16 px-4">
-   <h2 className="text-3xl font-bold mb-12 text-center">Key Features</h2>
-   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+  <section className="w-full max-w-6xl mx-auto py-8 sm:py-16 px-4">
+   <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">Key Features</h2>
+   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12">
     <FeatureCard
      title="Own a Piece of the Future"
      subtitle="Tokenize. Invest. Empower."

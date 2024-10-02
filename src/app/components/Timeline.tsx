@@ -12,8 +12,8 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
       viewport={{ once: true }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
-      <div className="flex">
-        <span className="absolute -left-44 bg-primary-light text-primary-dark text-sm font-medium px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light mt-1">
+      <div className="flex flex-col sm:flex-row">
+        <span className="absolute -left-4 sm:-left-44 bg-primary-light text-primary-dark text-xs sm:text-sm font-medium px-2 sm:px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light mt-1">
           {year}
         </span>
         <motion.div
@@ -27,11 +27,11 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
             {icon}
           </span>
         </motion.div>
-        <div className="ml-16">
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+        <div className="ml-6 sm:ml-16">
+          <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-1 sm:mb-2">
             {title}
           </h3>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>
+          <p className="text-sm sm:text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>
         </div>
       </div>
     </motion.li>
@@ -40,7 +40,7 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
 
 export const Timeline = () => {
   return (
-    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-24 pl-8">
+    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-4 sm:ml-24 pl-4 sm:pl-8">
       <TimelineItem
         year="Q3 - Q4, 2024"
         title="Phase 1: Foundation and Platform Development"

@@ -5,23 +5,23 @@ export default function Footer() {
   return (
     <footer className="bg-cosmos-primary/90 backdrop-blur-md text-cosmos-text-light py-8 border-t-2 border-gradient-to-r from-cosmos-primary via-cosmos-secondary to-cosmos-accent">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-1/4 mb-6 md:mb-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
             <InnovatrLogo className="h-8 w-auto mb-2" />
             <p className="text-sm text-cosmos-text-light/80">Revolutionizing ownership through blockchain technology.</p>
           </div>
-          <div className="w-full md:w-1/4 mb-6 md:mb-0">
+          <div>
             <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
-            <ul className="text-sm">
+            <ul className="text-sm space-y-2">
               <li><Link href="/solutions" className="text-cosmos-text-light/80 hover:text-cosmos-accent">Solutions</Link></li>
               <li><Link href="/visions" className="text-cosmos-text-light/80 hover:text-cosmos-accent">Visions</Link></li>
             </ul>
           </div>
-          <div className="w-full md:w-1/4 mb-6 md:mb-0">
+          <div>
             <h3 className="text-lg font-semibold mb-2">Contact</h3>
             <p className="text-sm text-cosmos-text-light/80">Email: innovate@innovatr.io</p>
           </div>
-          <div className="w-full md:w-1/4">
+          <div>
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/profile.php?id=61553927551050" target="_blank" rel="noopener noreferrer" className="text-cosmos-text-gray hover:text-cosmos-accent">

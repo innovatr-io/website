@@ -8,13 +8,13 @@ const PieChart = dynamic(() => import("../components/PieChart"), {
 
 export const AboutTokenDistributionSection = () => {
  return (
-  <section className="w-full max-w-6xl mx-auto py-16 px-4">
-   <h2 className="text-3xl font-bold mb-8 text-center">Token Distribution</h2>
-   <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-    <div className="w-full md:w-1/2">
+  <section className="w-full max-w-6xl mx-auto py-8 sm:py-16 px-4">
+   <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">Token Distribution</h2>
+   <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
+    <div className="w-full sm:w-1/2">
      <PieChart />
     </div>
-    <div className="w-full md:w-1/2">
+    <div className="w-full sm:w-1/2">
      <p className="mb-4">
       The VATR token allocation is designed to support long-term growth, community involvement, and project sustainability.
      </p>
