@@ -14,7 +14,10 @@ const config: Config = {
       primary: '#1B1E36',
       secondary: '#6F7390',
       accent: '#5EE2E7',
-      background: '#080A17',
+      background: {
+        start: '#080A17',
+        end: '#000000',
+      },
       text: {
         light: '#FFFFFF',
         gray: '#8D8FA8',

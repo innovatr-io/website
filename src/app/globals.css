@@ -19,13 +19,13 @@
 @tailwind utilities;
 
 :root {
- --background: theme("colors.cosmos.background");
+ --background: linear-gradient(to bottom, theme("colors.cosmos.background.start"), theme("colors.cosmos.background.end"));
  --foreground: theme("colors.cosmos.text.light");
 }
 
 @media (prefers-color-scheme: dark) {
  :root {
-  --background: theme("colors.cosmos.background");
+  --background: linear-gradient(to bottom, theme("colors.cosmos.background.start"), theme("colors.cosmos.background.end"));
   --foreground: theme("colors.cosmos.text.light");
  }
 }
