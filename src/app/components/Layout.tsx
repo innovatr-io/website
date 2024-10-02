@@ -7,7 +7,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-cosmos-background-start to-cosmos-background-end text-cosmos-text-light">
       <GradientBanner className="fixed inset-0 z-0" />
-      <nav className="navbar bg-cosmos-primary/70 text-cosmos-text-light backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b-2 border-gradient-to-r from-transparent via-cosmos-accent to-transparent py-2">
+      <nav className="navbar bg-cosmos-primary/30 text-cosmos-text-light backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b-2 border-gradient-to-r from-transparent via-cosmos-accent to-transparent py-2">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost normal-case">
             <InnovatrLogo className="h-8 w-auto" />
