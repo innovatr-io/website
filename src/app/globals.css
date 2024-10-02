@@ -163,10 +163,10 @@ body {
 .innovatr-logo::after {
   content: '';
   position: absolute;
-  top: 0;
-  right: 0.1em; /* Adjust as needed */
-  width: 0.2em; /* Adjust size as needed */
-  height: 0.2em; /* Adjust size as needed */
+  top: 0.1em; /* Adjusted for vertical alignment */
+  right: 0.35em; /* Moved closer to the 'i' */
+  width: 0.15em; /* Slightly reduced size */
+  height: 0.15em; /* Slightly reduced size */
   background-color: #006400; /* Dark green color */
   border-radius: 50%;
 }
