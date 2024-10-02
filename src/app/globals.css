@@ -158,15 +158,17 @@ body {
 /* Innovatr logo styling */
 .innovatr-logo {
   position: relative;
+  display: inline-block;
+  font-style: normal;
 }
 
 .innovatr-logo::after {
   content: '';
   position: absolute;
-  top: 0.1em; /* Adjusted for vertical alignment */
-  right: 0.35em; /* Moved closer to the 'i' */
-  width: 0.15em; /* Slightly reduced size */
-  height: 0.15em; /* Slightly reduced size */
+  top: -0.1em;
+  right: -0.3em;
+  width: 0.15em;
+  height: 0.15em;
   background-color: #006400; /* Dark green color */
   border-radius: 50%;
 }
