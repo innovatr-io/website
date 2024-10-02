@@ -7,7 +7,7 @@ import { AboutHeroSection } from "../sections/AboutHeroSection";
 import { AboutKeyFeaturesSection } from "../sections/AboutKeyFeaturesSection";
 import { AboutTokenDistributionSection } from "../sections/AboutTokenDistributionSection";
 import { AboutRoadmapSection } from "../sections/AboutRoadmapSection";
-import { AboutPartnersSection } from "../sections/AboutPartnersSection";
+// import { AboutPartnersSection } from "../sections/AboutPartnersSection";
 
 export default function About() {
  useEffect(() => {
@@ -43,9 +43,9 @@ export default function About() {
     {/* <SectionCard> */}
      <AboutRoadmapSection />
     {/* </SectionCard> */}
-    <SectionCard>
+    {/* <SectionCard>
      <AboutPartnersSection />
-    </SectionCard>
+    </SectionCard> */}
    </div>
   </Layout>
  );
