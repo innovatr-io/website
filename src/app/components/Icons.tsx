@@ -38,7 +38,8 @@ export const MusicIcon: React.FC<IconProps> = (props) => (
 
 export const RealEstateIcon: React.FC<IconProps> = (props) => (
   <IconWrapper {...props}>
-    <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+    <path d="M3 10.5V19a2 2 0 002 2h14a2 2 0 002-2v-8.5M3 10.5l9-7 9 7M3 10.5l9-7 9 7m-9-7v18" />
+    <path d="M9 14h1v4H9v-4zm5 0h1v4h-1v-4z" />
   </IconWrapper>
 );
 
