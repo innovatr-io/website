@@ -12,25 +12,27 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
       viewport={{ once: true }}
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
-      <motion.div
-        className="flex items-center mb-4"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
-      >
-        <span className="absolute flex items-center justify-center w-8 h-8 bg-cosmos-primary rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary -left-4 z-10">
-          {icon}
-        </span>
-        <span className="absolute -left-44 bg-primary-light text-primary-dark text-sm font-medium px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light">
+      <div className="flex">
+        <span className="absolute -left-44 bg-primary-light text-primary-dark text-sm font-medium px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light mt-1">
           {year}
         </span>
-      </motion.div>
-      <div className="ml-20">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-          {title}
-        </h3>
-        <p className="text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>
+        <motion.div
+          className="flex items-center mb-4"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
+        >
+          <span className="absolute flex items-center justify-center w-8 h-8 bg-cosmos-primary rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary -left-4 z-10">
+            {icon}
+          </span>
+        </motion.div>
+        <div className="ml-16">
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+            {title}
+          </h3>
+          <p className="text-base font-normal text-gray-500 dark:text-gray-400">{description}</p>
+        </div>
       </div>
     </motion.li>
   );
