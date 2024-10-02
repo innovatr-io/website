@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import InnovatrLogo from './InnovatrLogo';
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
-            <h3 className="text-lg font-semibold mb-2">Innovatr</h3>
+            <InnovatrLogo className="h-8 w-auto mb-2" />
             <p className="text-sm text-cosmos-text-light/80">Revolutionizing ownership through blockchain technology.</p>
           </div>
           <div className="w-full md:w-1/4 mb-6 md:mb-0">
