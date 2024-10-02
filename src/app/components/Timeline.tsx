@@ -19,10 +19,10 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
         viewport={{ once: true }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
       >
-        <span className="absolute flex items-center justify-center w-6 h-6 bg-cosmos-primary rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary -left-9">
+        <span className="absolute flex items-center justify-center w-8 h-8 bg-cosmos-primary rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary -left-4 z-10">
           {icon}
         </span>
-        <span className="absolute -left-32 bg-primary-light text-primary-dark text-sm font-medium px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light">
+        <span className="absolute -left-36 bg-primary-light text-primary-dark text-sm font-medium px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light">
           {year}
         </span>
       </motion.div>
@@ -44,7 +44,7 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
 
 export const Timeline = () => {
   return (
-    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-8 pl-12">
+    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-16 pl-8">
       <TimelineItem
         year="Q3 - Q4, 2024"
         title="Phase 1: Foundation and Platform Development"
