@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </ul>
         </div>
       </nav>
-      <main className="flex-grow flex flex-col items-center justify-start pt-20 relative z-10">
+      <main className="flex-grow flex flex-col items-center justify-start pt-20 relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {children}
       </main>
       <Footer />
