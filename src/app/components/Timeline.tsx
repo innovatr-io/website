@@ -22,11 +22,11 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
         <span className="absolute flex items-center justify-center w-8 h-8 bg-cosmos-primary rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary -left-4 z-10">
           {icon}
         </span>
-        <span className="absolute -left-36 bg-primary-light text-primary-dark text-sm font-medium px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light">
+        <span className="absolute -left-44 bg-primary-light text-primary-dark text-sm font-medium px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light">
           {year}
         </span>
       </motion.div>
-      <div className="ml-12">
+      <div className="ml-20">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
           {title}
         </h3>
@@ -44,7 +44,7 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
 
 export const Timeline = () => {
   return (
-    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-16 pl-8">
+    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-24 pl-8">
       <TimelineItem
         year="Q3 - Q4, 2024"
         title="Phase 1: Foundation and Platform Development"
