@@ -16,30 +16,26 @@ export const AboutTokenDistributionSection = () => {
     </div>
     <div className="w-full md:w-1/2">
      <p className="mb-4">
-      The VATR token allocation is designed to support long-term growth and
-      community involvement.
+      The VATR token allocation is designed to support long-term growth, community involvement, and project sustainability.
      </p>
      <p className="mb-4">
-      Team allocation ensures responsible project management, while the
-      strategic reserve enables strategic partnerships and ecosystem
-      development.
-     </p>
-     <p>
-      A substantial portion is dedicated to staking and reward pools, fostering
-      community participation and incentivizing engagement.
+      Team allocation ensures responsible project management, while the strategic reserve enables partnerships and ecosystem development. A substantial portion is dedicated to staking, reward pools, and airdrops, fostering community participation and incentivizing engagement.
      </p>
      <ul className="mt-4 list-disc list-inside">
       <li>
-       <span className="font-semibold">40%</span> - Public Sale
+       <span className="font-semibold">45%</span> - Staking, Reward Pool, Airdrops
       </li>
       <li>
-       <span className="font-semibold">25%</span> - Team & Advisors
+       <span className="font-semibold">20%</span> - Team Allocation
       </li>
       <li>
-       <span className="font-semibold">20%</span> - Platform Development
+       <span className="font-semibold">20%</span> - Strategic Reserve
       </li>
       <li>
-       <span className="font-semibold">15%</span> - Community Rewards
+       <span className="font-semibold">10%</span> - Liquidity
+      </li>
+      <li>
+       <span className="font-semibold">5%</span> - Investors
       </li>
      </ul>
     </div>
