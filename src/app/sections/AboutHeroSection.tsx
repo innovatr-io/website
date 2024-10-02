@@ -5,7 +5,7 @@ import { TextGenerateEffect } from "../components/TextGenerateEffect";
 
 export const AboutHeroSection = () => {
  return (
-  <section className="w-full flex flex-col items-center justify-center text-center py-12 px-4 sm:px-6 lg:px-8">
+  <section className="w-full flex flex-col items-center justify-center text-center py-24 px-4 sm:px-6 lg:px-8 mt-16">
    <motion.h1
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
