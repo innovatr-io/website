@@ -3,7 +3,7 @@ import InnovatrLogo from './InnovatrLogo';
 
 export default function Footer() {
   return (
-    <footer className="bg-cosmos-primary/90 backdrop-blur-md text-cosmos-text-light py-8 border-t-2 border-gradient-to-r from-cosmos-primary via-cosmos-secondary to-cosmos-accent">
+    <footer className="bg-cosmos-primary/30 backdrop-blur-sm text-cosmos-text-light py-8 border-t-2 border-gradient-to-r from-transparent via-cosmos-accent to-transparent">
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
