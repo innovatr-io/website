@@ -10,7 +10,7 @@ const InnovatrLogo: React.FC<{ className?: string }> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <text x="0" y="20" fill="currentColor" fontSize="24" fontFamily="Lato, sans-serif">
+      <text x="0" y="20" fill="currentColor" fontSize="24" fontFamily="Gotham, sans-serif">
         innovatr
       </text>
       <circle cx="5" cy="2" r="2" fill="#006400" />
