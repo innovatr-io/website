@@ -13,7 +13,7 @@ export const AboutHeroSection = () => {
     minSize={0.3}
     maxSize={2}
     particleColor="#5EE2E7"
-    particleDensity={300}
+    particleDensity={50}
     speed={0.4}
     className="absolute inset-0 z-0"
    />
