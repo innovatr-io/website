@@ -32,17 +32,17 @@ export default function About() {
 
  return (
   <Layout>
-   <div className="space-y-24">
+   <div className="space-y-24 mb-24">
     <AboutHeroSection />
-    <SectionCard>
+    {/* <SectionCard> */}
      <AboutKeyFeaturesSection />
-    </SectionCard>
+    {/* </SectionCard> */}
     <SectionCard>
      <AboutTokenDistributionSection />
     </SectionCard>
-    <SectionCard>
+    {/* <SectionCard> */}
      <AboutRoadmapSection />
-    </SectionCard>
+    {/* </SectionCard> */}
     <SectionCard>
      <AboutPartnersSection />
     </SectionCard>
