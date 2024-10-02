@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,7 +20,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-kode-mono), Arial, Helvetica, sans-serif;
+  font-family: 'Lato', var(--font-kode-mono), Arial, sans-serif;
 }
 
 

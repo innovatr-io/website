@@ -23,7 +23,7 @@ const config: Config = {
    },
    fontFamily: {
     mono: ["var(--font-kode-mono)", "monospace"],
-    sans: ["var(--font-kode-mono)", "monospace"], // Fallback to sans if you want Kode Mono as default
+    sans: ["Lato", "var(--font-kode-mono)", "sans-serif"],
    },
   },
  },
