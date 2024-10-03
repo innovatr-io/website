@@ -13,9 +13,6 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
       transition={{ duration: 0.8, ease: "easeInOut" }}
     >
       <div className="flex flex-col sm:flex-row">
-        <span className="absolute -left-4 sm:-left-44 bg-primary-light text-primary-dark text-xs sm:text-sm font-medium px-2 sm:px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light mt-1">
-          {year}
-        </span>
         <motion.div
           className="flex items-center mb-4"
           initial={{ opacity: 0 }}
@@ -26,8 +23,11 @@ const TimelineItem = ({ year, title, description, icon }: { year: string; title:
           <span className="absolute flex items-center justify-center w-8 h-8 bg-cosmos-primary rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-cosmos-primary -left-4 z-10">
             {icon}
           </span>
+          <span className="absolute left-8 sm:-left-44 bg-primary-light text-primary-dark text-xs sm:text-sm font-medium px-2 sm:px-2.5 py-0.5 rounded dark:bg-primary-dark dark:text-primary-light mt-1">
+            {year}
+          </span>
         </motion.div>
-        <div className="ml-6 sm:ml-16">
+        <div className="ml-16 sm:ml-16">
           <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-1 sm:mb-2">
             {title}
           </h3>
