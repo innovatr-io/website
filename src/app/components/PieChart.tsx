@@ -45,16 +45,18 @@ const createPieChartData = (animationPercentage: number) => ({
 
 const pieChartOptions = {
  responsive: true,
+ maintainAspectRatio: false,
  plugins: {
   legend: {
    position: "bottom" as const,
-   align: "center" as const,
+   align: "start" as const,
    labels: {
     color: "white",
-    padding: 20,
+    padding: 10,
     font: {
-     size: 14,
+     size: 12,
     },
+    boxWidth: 15,
    },
   },
  },
@@ -85,7 +87,7 @@ export default function PieChart() {
  }, [inView]);
 
  return (
-  <div ref={ref}>
+  <div ref={ref} style={{ height: '300px', width: '100%' }}>
    <Pie
     data={createPieChartData(animationPercentage)}
     options={pieChartOptions}
