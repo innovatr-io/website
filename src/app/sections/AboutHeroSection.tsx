@@ -23,13 +23,18 @@ export const AboutHeroSection = () => {
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, ease: "easeOut" }}
-    className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white relative z-10"
+    className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-white relative z-10 glow-text"
    >
     Revolutionizing Ownership
    </motion.h1>
-   <p className="text-2xl mb-8 text-white drop-shadow-md relative z-10">
+   <motion.p 
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 0.8 }}
+    transition={{ duration: 1, delay: 0.5 }}
+    className="text-2xl mb-8 text-white drop-shadow-md relative z-10 glow-text"
+   >
     <TextGenerateEffect words="A unique community driven fractional ownership platform" />
-   </p>
+   </motion.p>
   </section>
  );
 };
