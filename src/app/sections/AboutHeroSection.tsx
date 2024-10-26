@@ -40,9 +40,8 @@ export const AboutHeroSection = () => {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: 0.8 }}
    >
-    <button className="px-6 py-3 backdrop-blur-sm border bg-purple-300/10 border-purple-500/20 text-white text-center rounded-full relative z-10 hover:bg-purple-300/20 transition-all duration-200">
+    <button className="px-6 py-3 backdrop-blur-sm border-2 bg-transparent border-[#5EE2E7] text-white text-center rounded-lg relative z-10 hover:bg-[#5EE2E7]/10 transition-all duration-200">
       <span className="text-lg">Launch App →</span>
-      <div className="absolute inset-x-0 h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-purple-500 to-transparent" />
     </button>
    </motion.div>
   </section>

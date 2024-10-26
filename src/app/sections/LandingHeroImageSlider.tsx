@@ -34,13 +34,11 @@ export const LandingHeroImageSlider = () => {
      access to high-value assets and intellectual property.
     </motion.p>
     <div className="flex gap-4">
-      <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+      <button className="px-4 py-2 backdrop-blur-sm border-2 bg-transparent border-emerald-500 text-white mx-auto text-center rounded-lg relative mt-4 hover:bg-emerald-500/10 transition-all duration-200">
         <span>Explore Now →</span>
-        <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
       </button>
-      <button className="px-4 py-2 backdrop-blur-sm border bg-purple-300/10 border-purple-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+      <button className="px-4 py-2 backdrop-blur-sm border-2 bg-transparent border-[#5EE2E7] text-white mx-auto text-center rounded-lg relative mt-4 hover:bg-[#5EE2E7]/10 transition-all duration-200">
         <span>Launch App →</span>
-        <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-purple-500 to-transparent" />
       </button>
     </div>
    </motion.div>
