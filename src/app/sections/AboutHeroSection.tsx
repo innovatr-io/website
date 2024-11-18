@@ -40,9 +40,9 @@ export const AboutHeroSection = () => {
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay: 0.8 }}
    >
-    <button className="px-6 py-3 backdrop-blur-sm border border-cosmos-accent/20 text-white text-center rounded-lg relative z-10 hover:bg-[#5EE2E7]/10 transition-all duration-300" style={{ boxShadow: "0 0 20px rgba(94, 226, 231, 0.3)" }}>
+    {/* <button className="px-6 py-3 backdrop-blur-sm border border-cosmos-accent/20 text-white text-center rounded-lg relative z-10 hover:bg-[#5EE2E7]/10 transition-all duration-300" style={{ boxShadow: "0 0 20px rgba(94, 226, 231, 0.3)" }}>
       <span className="text-lg">Launch App →</span>
-    </button>
+    </button> */}
    </motion.div>
   </section>
  );
