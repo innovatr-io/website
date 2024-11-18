@@ -1,20 +1,9 @@
 "use client";
 
-import type { Metadata } from "next";
 import React from "react";
 import Layout from "../components/Layout";
 import { VisionsHeroSection } from "../sections/VisionsHeroSection";
 import { VisionsSectionComponent } from "../sections/VisionsSectionComponent";
-
-export const metadata: Metadata = {
-  title: 'Our Vision',
-  description: 'Explore Innovatr\'s vision for the future of decentralized asset ownership and community empowerment.',
-  openGraph: {
-    title: 'Innovatr Vision',
-    description: 'Explore Innovatr\'s vision for the future of decentralized asset ownership and community empowerment.',
-    images: ['/images/vision-og.jpg'], // Add your OG image
-  },
-};
 
 export default function Visions() {
  return (

@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import { useEffect } from "react";
 import Layout from "../components/Layout";
 import SectionCard from "../components/SectionCard";
@@ -9,16 +8,6 @@ import { AboutKeyFeaturesSection } from "../sections/AboutKeyFeaturesSection";
 import { AboutTokenDistributionSection } from "../sections/AboutTokenDistributionSection";
 import { AboutRoadmapSection } from "../sections/AboutRoadmapSection";
 // import { AboutPartnersSection } from "../sections/AboutPartnersSection";
-
-export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'Learn about Innovatr\'s mission to revolutionize asset ownership through blockchain technology.',
-  openGraph: {
-    title: 'About Innovatr',
-    description: 'Learn about Innovatr\'s mission to revolutionize asset ownership through blockchain technology.',
-    images: ['/images/about-og.jpg'], // Add your OG image
-  },
-};
 
 export default function About() {
  useEffect(() => {
