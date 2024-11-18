@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Kode_Mono } from 'next/font/google';
 import "./globals.css";
+import { defaultMetadata } from './metadata';
 
 const kodeMono = Kode_Mono({
   subsets: ['latin'],
@@ -10,8 +11,11 @@ const kodeMono = Kode_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Innovatr - Revolutionizing Ownership",
-  description: "Innovatr is a platform for fractional ownership of high-value assets and intellectual property.",
+  ...defaultMetadata,
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

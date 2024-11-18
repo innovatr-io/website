@@ -1,5 +1,6 @@
 "use client";
 
+import type { Metadata } from "next";
 import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import { SolutionsHeroSection } from "../sections/SolutionsHeroSection";
@@ -7,6 +8,16 @@ import { SolutionsKeyFeaturesSection } from "../sections/SolutionsKeyFeaturesSec
 import { SolutionsAdvantagesSection } from "../sections/SolutionsAdvantagesSection";
 import { SolutionsClosingSection } from "../sections/SolutionsClosingSection";
 import SectionCard from "../components/SectionCard";
+
+export const metadata: Metadata = {
+  title: 'Our Solutions',
+  description: 'Discover Innovatr\'s blockchain-based solutions for asset tokenization and fractional ownership.',
+  openGraph: {
+    title: 'Innovatr Solutions',
+    description: 'Discover Innovatr\'s blockchain-based solutions for asset tokenization and fractional ownership.',
+    images: ['/images/solutions-og.jpg'], // Add your OG image
+  },
+};
 
 export default function Solutions() {
  useEffect(() => {
