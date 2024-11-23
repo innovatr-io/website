@@ -1,3 +1,15 @@
+# Innovatr.io
+
+Welcome to the official repository for [Innovatr.io](https://www.innovatr.io/) - a revolutionary platform transforming the landscape of decentralized finance through innovative blockchain solutions.
+
+## About
+
+Innovatr is building the future of DeFi by providing cutting-edge solutions that bridge traditional finance with blockchain technology. Our platform offers seamless integration of advanced trading features, robust security measures, and an intuitive user experience.
+
+Visit our website at [https://www.innovatr.io/](https://www.innovatr.io/) to learn more about our vision and solutions.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
